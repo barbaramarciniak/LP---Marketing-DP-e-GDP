@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="stylesheet" href="_ds/organic-335aadcb-656c-4fc9-a5cc-b2b6bab62784/styles.css">
+<script src="_ds/organic-335aadcb-656c-4fc9-a5cc-b2b6bab62784/_ds_bundle.js"></script>
+<style>
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+body{margin:0;-webkit-font-smoothing:antialiased}
+a{color:var(--color-accent-700)}
+a:hover{color:var(--color-accent-600)}
+</style>
+</helmet>
+
+<div style="background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);overflow-x:hidden">
+
+  <div style="position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--color-bg) 88%, transparent);backdrop-filter:blur(12px)">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:14px 32px;display:flex;align-items:center;gap:28px">
+      <div style="display:flex;align-items:center;gap:10px;margin-right:auto">
+        <div style="width:30px;height:30px;border-radius:999px;background:var(--color-accent-2-500);position:relative;flex:none">
+          <div style="position:absolute;inset:8px;border-radius:999px;background:var(--color-accent-400)"></div>
+        </div>
+        <span style="font-family:var(--font-heading);font-size:18px;letter-spacing:-.01em">{{ brand }}</span>
+      </div>
+      <nav style="display:flex;gap:24px;font-size:14px">
+        <a href="#cenario" style="color:inherit;text-decoration:none">O cenário</a>
+        <a href="#frentes" style="color:inherit;text-decoration:none">As três frentes</a>
+        <a href="#como" style="color:inherit;text-decoration:none">Como funciona</a>
+        <a href="#investimento" style="color:inherit;text-decoration:none">Investimento</a>
+      </nav>
+      <a class="btn btn-primary" href="#contato" style="flex:none">Falar no WhatsApp</a>
+    </div>
+  </div>
+
+  <sc-if value="{{ heroA }}" hint-placeholder-val="{{ true }}">
+  <section data-screen-label="Hero A" style="position:relative;padding:88px 0 104px">
+    <div style="position:absolute;top:-120px;right:-140px;width:520px;height:520px;border-radius:999px;background:var(--color-accent-2-200);opacity:.55"></div>
+    <div style="position:absolute;top:280px;right:300px;width:120px;height:120px;border-radius:999px;background:var(--color-accent-200);opacity:.7;animation:floaty 9s ease-in-out infinite"></div>
+    <div style="position:relative;width:100%;max-width:1160px;margin:0 auto;padding:0 32px;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center">
+      <div>
+        <span class="tag tag-accent-2" style="margin-bottom:22px">Para clínicas de 1 a 6 colaboradores</span>
+        <h1 style="font-size:63px;line-height:1.03;margin:0 0 22px;max-width:16ch">Sua clínica cuida de gente. A gente cuida do resto.</h1>
+        <p style="font-size:19px;line-height:1.6;max-width:46ch;color:color-mix(in srgb, var(--color-text) 78%, transparent)">Departamento Pessoal, Gestão de Pessoas e Comunicação em um único contrato — conduzidos por três especialistas, com presença semanal na sua clínica e rotinas que finalmente saem da cabeça das sócias.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:32px">
+          <a class="btn btn-primary" href="#contato" style="padding:13px 26px;font-size:15px">Quero um diagnóstico</a>
+          <a class="btn btn-secondary" href="#frentes" style="padding:13px 26px;font-size:15px">Ver o escopo completo</a>
+        </div>
+        <div style="display:flex;gap:36px;margin-top:44px;flex-wrap:wrap">
+          <div><div style="font-family:var(--font-heading);font-size:28px">3</div><div style="font-size:13px;color:color-mix(in srgb, var(--color-text) 60%, transparent)">frentes, um só contrato</div></div>
+          <div><div style="font-family:var(--font-heading);font-size:28px">semanal</div><div style="font-size:13px;color:color-mix(in srgb, var(--color-text) 60%, transparent)">presença na clínica</div></div>
+          <div><div style="font-family:var(--font-heading);font-size:28px">16h</div><div style="font-size:13px;color:color-mix(in srgb, var(--color-text) 60%, transparent)">por mês em cada frente</div></div>
+        </div>
+      </div>
+      <div class="washed" style="border-radius:calc(var(--radius-lg) * 1.6);overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/5;background:repeating-linear-gradient(135deg, var(--color-accent-2-200) 0 12px, var(--color-accent-2-300) 12px 24px);display:grid;place-items:center;text-align:center;padding:24px">
+        <span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.6;color:var(--color-accent-2-800)">foto da recepção<br>de uma clínica real<br>(vertical, 4:5)</span>
+      </div>
+    </div>
+  </section>
+  </sc-if>
+
+  <sc-if value="{{ heroB }}" hint-placeholder-val="{{ false }}">
+  <section data-screen-label="Hero B" style="position:relative;padding:88px 0 104px;background:var(--color-accent-2-800);color:var(--color-neutral-100)">
+    <div style="position:absolute;bottom:-180px;left:-100px;width:460px;height:460px;border-radius:999px;background:var(--color-accent-2-700);opacity:.6"></div>
+    <div style="position:relative;width:100%;max-width:1160px;margin:0 auto;padding:0 32px">
+      <span class="tag" style="background:color-mix(in srgb, #f9f4ed 16%, transparent);color:var(--color-neutral-100);margin-bottom:26px">Consultoria para clínicas de saúde de pequeno porte</span>
+      <h1 style="font-size:76px;line-height:.98;margin:0 0 26px;max-width:22ch">Três especialistas. Uma clínica organizada.</h1>
+      <p style="font-size:19px;line-height:1.6;max-width:52ch;color:color-mix(in srgb, #f9f4ed 82%, transparent)">Pessoas, obrigações trabalhistas e comunicação deixam de ser urgência e passam a ter rotina, calendário e responsável. Sem contratar um time interno.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:34px">
+        <a class="btn" href="#contato" style="background:var(--color-accent-400);color:var(--color-accent-900);padding:13px 26px;font-size:15px">Falar no WhatsApp</a>
+        <a class="btn" href="#frentes" style="border:1px solid color-mix(in srgb, #f9f4ed 35%, transparent);color:var(--color-neutral-100);padding:13px 26px;font-size:15px">Ver as três frentes</a>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:64px">
+        <div style="border-radius:calc(var(--radius-lg) * 1.15);padding:22px 24px;background:color-mix(in srgb, #f9f4ed 10%, transparent)">
+          <div style="font-family:var(--font-heading);font-size:19px;margin-bottom:6px">Departamento Pessoal</div>
+          <p style="margin:0;font-size:13.5px;line-height:1.55;color:color-mix(in srgb, #f9f4ed 75%, transparent)">Admissões, ponto, folha, férias e eSocial acompanhados de perto — e conversando com a sua contabilidade.</p>
+        </div>
+        <div style="border-radius:calc(var(--radius-lg) * 1.15);padding:22px 24px;background:color-mix(in srgb, #f9f4ed 10%, transparent)">
+          <div style="font-family:var(--font-heading);font-size:19px;margin-bottom:6px">Gestão de Pessoas</div>
+          <p style="margin:0;font-size:13.5px;line-height:1.55;color:color-mix(in srgb, #f9f4ed 75%, transparent)">Cargos, onboarding, feedbacks, mediação de conflitos e o plano de ação exigido pela NR-1.</p>
+        </div>
+        <div style="border-radius:calc(var(--radius-lg) * 1.15);padding:22px 24px;background:color-mix(in srgb, #f9f4ed 10%, transparent)">
+          <div style="font-family:var(--font-heading);font-size:19px;margin-bottom:6px">Comunicação</div>
+          <p style="margin:0;font-size:13.5px;line-height:1.55;color:color-mix(in srgb, #f9f4ed 75%, transparent)">Conteúdo constante, Google Meu Negócio ativo e captação presencial todo mês na clínica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </sc-if>
+
+  <sc-if value="{{ heroC }}" hint-placeholder-val="{{ false }}">
+  <section data-screen-label="Hero C" style="padding:76px 0 0">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px">
+        <span class="tag tag-outline">Departamento Pessoal</span>
+        <span class="tag tag-outline">Gestão de Pessoas</span>
+        <span class="tag tag-outline">Comunicação e Marketing</span>
+      </div>
+      <h1 style="font-size:82px;line-height:.98;margin:0 0 28px;max-width:20ch">Cuidar de quem cuida também é trabalho técnico.</h1>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;padding-bottom:56px">
+        <p style="font-size:19px;line-height:1.6;margin:0;color:color-mix(in srgb, var(--color-text) 78%, transparent)">Um serviço recorrente e enxuto para clínicas com até seis colaboradores: três especialistas revezando visitas presenciais, com escopo escrito, calendário de obrigações e relatório todo mês.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end">
+          <a class="btn btn-primary" href="#contato" style="padding:13px 26px;font-size:15px">Conversar sobre a minha clínica</a>
+        </div>
+      </div>
+      <div class="washed" style="border-radius:calc(var(--radius-lg) * 1.6);overflow:hidden;box-shadow:var(--shadow-lg);height:380px;background:repeating-linear-gradient(115deg, var(--color-accent-200) 0 14px, var(--color-accent-300) 14px 28px);display:grid;place-items:center;text-align:center">
+        <span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.6;color:var(--color-accent-800)">foto panorâmica da equipe / da clínica<br>(horizontal, ~3:1)</span>
+      </div>
+    </div>
+  </section>
+  </sc-if>
+
+  <section id="cenario" data-screen-label="Cenário" style="padding:104px 0">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 32px">
+      <p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 16px">O cenário de hoje</p>
+      <h2 style="font-size:44px;line-height:1.06;margin:0 0 18px;max-width:24ch">Se alguma dessas frases parece familiar, é com você que a gente fala.</h2>
+      <p style="font-size:17px;max-width:56ch;margin:0 0 48px;color:color-mix(in srgb, var(--color-text) 70%, transparent)">Em clínicas pequenas, gestão de pessoas e comunicação vivem no intervalo entre atendimentos. Não é falta de cuidado — é falta de estrutura.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+        <div class="card elev-sm" style="padding:26px 28px;gap:10px">
+          <div style="width:34px;height:34px;border-radius:999px;background:var(--color-accent-200);display:grid;place-items:center;font-family:var(--font-heading);font-size:15px;color:var(--color-accent-800)">1</div>
+          <div class="card-title" style="font-size:19px">“O controle de ponto está numa planilha que ninguém confere.”</div>
+          <p class="card-body" style="font-size:14px">Marcações inconsistentes, horas extras sem controle e a folha fechando no susto todo mês.</p>
+        </div>
+        <div class="card elev-sm" style="padding:26px 28px;gap:10px">
+          <div style="width:34px;height:34px;border-radius:999px;background:var(--color-accent-200);display:grid;place-items:center;font-family:var(--font-heading);font-size:15px;color:var(--color-accent-800)">2</div>
+          <div class="card-title" style="font-size:19px">“As férias venceram e a gente só descobriu depois.”</div>
+          <p class="card-body" style="font-size:14px">Períodos aquisitivos, atestados e benefícios sem calendário, sem alerta e sem responsável.</p>
+        </div>
+        <div class="card elev-sm" style="padding:26px 28px;gap:10px">
+          <div style="width:34px;height:34px;border-radius:999px;background:var(--color-accent-200);display:grid;place-items:center;font-family:var(--font-heading);font-size:15px;color:var(--color-accent-800)">3</div>
+          <div class="card-title" style="font-size:19px">“Contratamos, mas ninguém explicou nada pra ela no primeiro dia.”</div>
+          <p class="card-body" style="font-size:14px">Sem descrição de cargo, sem integração e sem roteiro de entrevista — cada contratação começa do zero.</p>
+        </div>
+        <div class="card elev-sm" style="padding:26px 28px;gap:10px">
+          <div style="width:34px;height:34px;border-radius:999px;background:var(--color-accent-200);display:grid;place-items:center;font-family:var(--font-heading);font-size:15px;color:var(--color-accent-800)">4</div>
+          <div class="card-title" style="font-size:19px">“Existe um clima estranho na equipe e ninguém toca no assunto.”</div>
+          <p class="card-body" style="font-size:14px">Em times de seis pessoas, um atrito não resolvido contamina o atendimento inteiro.</p>
+        </div>
+        <div class="card elev-sm" style="padding:26px 28px;gap:10px">
+          <div style="width:34px;height:34px;border-radius:999px;background:var(--color-accent-200);display:grid;place-items:center;font-family:var(--font-heading);font-size:15px;color:var(--color-accent-800)">5</div>
+          <div class="card-title" style="font-size:19px">“O Instagram parou em março e o Google está desatualizado.”</div>
+          <p class="card-body" style="font-size:14px">O paciente procura a clínica antes de ligar — e encontra um perfil sem movimento e avaliações sem resposta.</p>
+        </div>
+        <div style="border-radius:calc(var(--radius-lg) * 1.15);padding:26px 28px;background:var(--color-accent-2-800);color:var(--color-neutral-100);display:flex;flex-direction:column;justify-content:space-between;gap:16px">
+          <div>
+            <div style="font-family:var(--font-heading);font-size:20px;line-height:1.2;margin-bottom:10px">Nada disso se resolve com mais um sistema.</div>
+            <p style="margin:0;font-size:14px;line-height:1.6;color:color-mix(in srgb, #f9f4ed 78%, transparent)">Resolve-se com alguém de fora, presente toda semana, com escopo escrito e prazo definido.</p>
+          </div>
+          <a class="btn" href="#frentes" style="align-self:flex-start;background:var(--color-accent-400);color:var(--color-accent-900)">Ver como funciona</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="frentes" data-screen-label="Frentes" style="padding:104px 0;background:var(--color-neutral-100)">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 32px">
+      <p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 16px">O pacote integrado</p>
+      <h2 style="font-size:44px;line-height:1.06;margin:0 0 18px;max-width:26ch">Três frentes que conversam entre si — e não três fornecedores.</h2>
+      <p style="font-size:17px;max-width:58ch;margin:0 0 40px;color:color-mix(in srgb, var(--color-text) 70%, transparent)">Cada frente tem escopo próprio e uma responsável. Como trabalham no mesmo contrato, uma informação levantada na visita de Gestão de Pessoas chega ao Departamento Pessoal sem você precisar reexplicar.</p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px">
+        <button type="button" onClick="{{ pickDP }}" style="{{ tabStyleDP }}">Departamento Pessoal</button>
+        <button type="button" onClick="{{ pickGP }}" style="{{ tabStyleGP }}">Gestão de Pessoas</button>
+        <button type="button" onClick="{{ pickCM }}" style="{{ tabStyleCM }}">Comunicação e Marketing</button>
+      </div>
+
+      <div style="border-radius:calc(var(--radius-lg) * 1.3);background:var(--color-bg);box-shadow:var(--shadow-md);padding:44px 48px">
+        <div style="display:grid;grid-template-columns:.85fr 1.15fr;gap:48px">
+          <div>
+            <span class="tag tag-accent-2" style="margin-bottom:16px">{{ frente.tag }}</span>
+            <h3 style="font-size:33px;line-height:1.08;margin:0 0 14px">{{ frente.titulo }}</h3>
+            <p style="font-size:16px;line-height:1.62;margin:0 0 22px;color:color-mix(in srgb, var(--color-text) 76%, transparent)">{{ frente.resumo }}</p>
+            <div style="border-radius:var(--radius-md);background:var(--color-surface);padding:18px 20px">
+              <div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:8px">Fica claro no contrato</div>
+              <p style="margin:0;font-size:13.5px;line-height:1.6">{{ frente.limite }}</p>
+            </div>
+          </div>
+          <div style="display:grid;gap:16px">
+            <sc-for list="{{ itens }}" as="item" hint-placeholder-count="6">
+              <div style="display:grid;grid-template-columns:26px 1fr;gap:14px;align-items:start">
+                <div style="width:26px;height:26px;border-radius:999px;background:var(--color-accent-2-200);color:var(--color-accent-2-800);display:grid;place-items:center;font-family:var(--font-heading);font-size:12.5px">{{ item.n }}</div>
+                <div>
+                  <div style="font-family:var(--font-heading);font-size:17.5px;margin-bottom:3px">{{ item.titulo }}</div>
+                  <p style="margin:0;font-size:14.5px;line-height:1.6;color:color-mix(in srgb, var(--color-text) 74%, transparent)">{{ item.desc }}</p>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como" data-screen-label="Como funciona" style="padding:104px 0">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 32px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start">
+        <div>
+          <p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 16px">Como funciona</p>
+          <h2 style="font-size:44px;line-height:1.06;margin:0 0 18px;max-width:20ch">Presença semanal, sem peso de time interno.</h2>
+          <p style="font-size:17px;line-height:1.62;margin:0 0 28px;color:color-mix(in srgb, var(--color-text) 74%, transparent)">Cada frente reserva 4 horas semanais — cerca de 16 horas por mês. As visitas presenciais são revezadas entre as três especialistas, então na prática há alguém na clínica quase toda semana. O trabalho de bastidor (conferências, documentos, edição, relatórios) acontece à distância entre as visitas.</p>
+          <div class="washed" style="border-radius:calc(var(--radius-lg) * 1.4);overflow:hidden;height:260px;background:repeating-linear-gradient(135deg, var(--color-accent-2-200) 0 14px, var(--color-accent-2-300) 14px 28px);display:grid;place-items:center;text-align:center">
+            <span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;line-height:1.6;color:var(--color-accent-2-800)">foto de uma reunião<br>na clínica (horizontal)</span>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div class="card elev-sm" style="padding:24px 26px;gap:8px">
+            <span class="tag tag-accent" style="align-self:flex-start">Mês 1 · semana 1</span>
+            <div class="card-title" style="font-size:20px">Diagnóstico e estruturação</div>
+            <p class="card-body" style="font-size:14px">Levantamento de colaboradores, documentos e rotinas; diagnóstico de presença digital; descrição de cargos e guia de integração. Feito uma vez, revisado quando a clínica muda.</p>
+          </div>
+          <div class="card elev-sm" style="padding:24px 26px;gap:8px">
+            <span class="tag tag-accent" style="align-self:flex-start">Toda semana</span>
+            <div class="card-title" style="font-size:20px">Uma visita de 4 horas</div>
+            <p class="card-body" style="font-size:14px">Alto contato: conferência de rotinas, feedbacks e 1:1, mediações, entrevistas, captação de fotos e vídeos, alinhamento com a equipe.</p>
+          </div>
+          <div class="card elev-sm" style="padding:24px 26px;gap:8px">
+            <span class="tag tag-accent" style="align-self:flex-start">Entre as visitas</span>
+            <div class="card-title" style="font-size:20px">Bastidor à distância</div>
+            <p class="card-body" style="font-size:14px">Conferências de ponto e folha, organização documental, envio de informações à contabilidade, edição e publicação de conteúdo. WhatsApp e e-mail abertos para aprovações.</p>
+          </div>
+          <div class="card elev-sm" style="padding:24px 26px;gap:8px">
+            <span class="tag tag-accent" style="align-self:flex-start">Todo mês</span>
+            <div class="card-title" style="font-size:20px">Relatório e indicadores</div>
+            <p class="card-body" style="font-size:14px">Número de colaboradores, horas extras, férias a vencer, afastamentos, turnover, absenteísmo, alcance e avaliações — em uma leitura que cabe em cinco minutos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="investimento" data-screen-label="Investimento" style="padding:104px 0;background:var(--color-accent-2-800);color:var(--color-neutral-100)">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 32px">
+      <p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-300);margin:0 0 16px">Investimento</p>
+      <h2 style="font-size:44px;line-height:1.06;margin:0 0 18px;max-width:24ch">Integrado por padrão. Avulso quando faz sentido.</h2>
+      <p style="font-size:17px;max-width:56ch;margin:0 0 48px;color:color-mix(in srgb, #f9f4ed 78%, transparent)">O valor final depende do número de colaboradores e do volume real da clínica — e é fechado depois de uma conversa de diagnóstico, sem surpresa.</p>
+      <div style="display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:start">
+        <div style="border-radius:calc(var(--radius-lg) * 1.3);background:var(--color-neutral-100);color:var(--color-text);padding:38px 40px;box-shadow:var(--shadow-lg)">
+          <span class="tag tag-accent-2">Recomendado</span>
+          <h3 style="font-size:29px;margin:16px 0 8px">Pacote integrado</h3>
+          <p style="font-size:15px;line-height:1.6;margin:0 0 22px;color:color-mix(in srgb, var(--color-text) 72%, transparent)">As três frentes, 16 horas mensais em cada, visitas presenciais revezadas e relatório único.</p>
+          <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:6px">
+            <span style="font-size:14px;color:color-mix(in srgb, var(--color-text) 60%, transparent)">a partir de</span>
+            <span style="font-family:var(--font-heading);font-size:42px;line-height:1">{{ precoIntegrado }}</span>
+            <span style="font-size:15px;color:color-mix(in srgb, var(--color-text) 60%, transparent)">/mês</span>
+          </div>
+          <p style="font-size:13px;margin:0 0 24px;color:color-mix(in srgb, var(--color-text) 55%, transparent)">Contrato PJ mensal, renovação automática, encerramento com aviso de 30 dias.</p>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:26px">
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px"><span style="width:7px;height:7px;border-radius:999px;background:var(--color-accent-2-500);flex:none;margin-top:7px"></span><span>Recrutamento e seleção sob demanda incluído — normalmente cobrado à parte, a partir de R$ 3.000</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px"><span style="width:7px;height:7px;border-radius:999px;background:var(--color-accent-2-500);flex:none;margin-top:7px"></span><span>Plano de ação de riscos psicossociais (NR-1) desenvolvido e acompanhado</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px"><span style="width:7px;height:7px;border-radius:999px;background:var(--color-accent-2-500);flex:none;margin-top:7px"></span><span>Campanha sazonal e materiais de apoio todo mês</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px"><span style="width:7px;height:7px;border-radius:999px;background:var(--color-accent-2-500);flex:none;margin-top:7px"></span><span>Calendário anual de obrigações trabalhistas e relatório mensal</span></div>
+          </div>
+          <a class="btn btn-primary btn-block" href="#contato" style="padding:14px;font-size:15px">Pedir proposta para a minha clínica</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:20px">
+          <div style="border-radius:calc(var(--radius-lg) * 1.15);padding:30px 32px;background:color-mix(in srgb, #f9f4ed 10%, transparent)">
+            <h4 style="font-size:21px;margin:0 0 8px">Frente isolada</h4>
+            <p style="margin:0 0 18px;font-size:14.5px;line-height:1.6;color:color-mix(in srgb, #f9f4ed 76%, transparent)">Se a clínica só precisa de uma das frentes agora, é possível começar por ela — com o mesmo formato de 16 horas mensais.</p>
+            <div style="display:flex;align-items:baseline;gap:8px"><span style="font-size:13px;color:color-mix(in srgb, #f9f4ed 65%, transparent)">a partir de</span><span style="font-family:var(--font-heading);font-size:30px">{{ precoFrente }}</span><span style="font-size:14px;color:color-mix(in srgb, #f9f4ed 65%, transparent)">/mês</span></div>
+          </div>
+          <div style="border-radius:calc(var(--radius-lg) * 1.15);padding:30px 32px;background:color-mix(in srgb, #f9f4ed 10%, transparent)">
+            <h4 style="font-size:21px;margin:0 0 8px">Módulos avulsos</h4>
+            <p style="margin:0 0 16px;font-size:14.5px;line-height:1.6;color:color-mix(in srgb, #f9f4ed 76%, transparent)">Fora das horas contratadas, orçados e aprovados antes de qualquer execução:</p>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <span class="tag" style="background:color-mix(in srgb, #f9f4ed 16%, transparent);color:var(--color-neutral-100)">Tráfego pago</span>
+              <span class="tag" style="background:color-mix(in srgb, #f9f4ed 16%, transparent);color:var(--color-neutral-100)">Nova identidade visual</span>
+              <span class="tag" style="background:color-mix(in srgb, #f9f4ed 16%, transparent);color:var(--color-neutral-100)">Cobertura de eventos</span>
+              <span class="tag" style="background:color-mix(in srgb, #f9f4ed 16%, transparent);color:var(--color-neutral-100)">Projetos extraordinários de DP</span>
+              <span class="tag" style="background:color-mix(in srgb, #f9f4ed 16%, transparent);color:var(--color-neutral-100)">Ferramentas e deslocamentos</span>
+            </div>
+          </div>
+          <p style="margin:0;font-size:13px;line-height:1.6;color:color-mix(in srgb, #f9f4ed 62%, transparent)">Se o número de colaboradores, o volume de admissões ou a complexidade da operação crescer, o escopo é revisto em conjunto — nunca cobrado por surpresa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" data-screen-label="Contato" style="padding:104px 0">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 32px">
+      <div style="display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start">
+        <div>
+          <p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-700);margin:0 0 16px">Primeiro passo</p>
+          <h2 style="font-size:44px;line-height:1.06;margin:0 0 18px;max-width:18ch">Uma conversa de 30 minutos sobre a sua clínica.</h2>
+          <p style="font-size:17px;line-height:1.62;margin:0 0 22px;color:color-mix(in srgb, var(--color-text) 74%, transparent)">Conte quantas pessoas trabalham com você e o que mais aperta hoje. Voltamos com um escopo escrito e um valor — sem compromisso.</p>
+          <div style="display:flex;flex-direction:column;gap:10px;font-size:14.5px">
+            <div style="display:flex;gap:10px"><span style="width:7px;height:7px;border-radius:999px;background:var(--color-accent-500);flex:none;margin-top:7px"></span><span>Resposta no mesmo dia útil</span></div>
+            <div style="display:flex;gap:10px"><span style="width:7px;height:7px;border-radius:999px;background:var(--color-accent-500);flex:none;margin-top:7px"></span><span>Diagnóstico inicial sem custo</span></div>
+            <div style="display:flex;gap:10px"><span style="width:7px;height:7px;border-radius:999px;background:var(--color-accent-500);flex:none;margin-top:7px"></span><span>Início da operação no mês seguinte à assinatura</span></div>
+          </div>
+        </div>
+        <div style="border-radius:calc(var(--radius-lg) * 1.3);background:var(--color-surface);padding:36px 38px;box-shadow:var(--shadow-md)">
+          <sc-if value="{{ enviado }}" hint-placeholder-val="{{ false }}">
+            <div style="text-align:center;padding:28px 8px">
+              <div style="width:58px;height:58px;border-radius:999px;background:var(--color-accent-2-300);margin:0 auto 18px;display:grid;place-items:center">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3d472b" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"></polyline></svg>
+              </div>
+              <h3 style="font-size:25px;margin:0 0 10px">Recebido, {{ primeiroNome }}!</h3>
+              <p style="font-size:15px;line-height:1.6;margin:0 0 22px;color:color-mix(in srgb, var(--color-text) 72%, transparent)">Preparamos um resumo do seu contato para abrir direto na conversa. Se preferir, também respondemos por e-mail.</p>
+              <a class="btn btn-primary" href="{{ waLink }}" target="_blank" rel="noopener" style="padding:13px 26px;font-size:15px">Abrir no WhatsApp</a>
+              <div style="margin-top:14px"><button type="button" class="btn btn-ghost" onClick="{{ resetForm }}">Enviar outro contato</button></div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ formAberto }}" hint-placeholder-val="{{ true }}">
+          <form onSubmit="{{ submit }}">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+              <div class="field"><label for="f-nome">Seu nome</label><input class="input" id="f-nome" value="{{ nome }}" onChange="{{ setNome }}" placeholder="Como podemos te chamar"></div>
+              <div class="field"><label for="f-clinica">Nome da clínica</label><input class="input" id="f-clinica" value="{{ clinica }}" onChange="{{ setClinica }}" placeholder="Clínica..."></div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+              <div class="field"><label for="f-zap">WhatsApp</label><input class="input" id="f-zap" value="{{ zap }}" onChange="{{ setZap }}" placeholder="(00) 00000-0000"></div>
+              <div class="field"><label for="f-colab">Colaboradores</label>
+                <select class="input" id="f-colab" value="{{ colab }}" onChange="{{ setColab }}">
+                  <option value="1 a 2">1 a 2 colaboradores</option>
+                  <option value="3 a 4">3 a 4 colaboradores</option>
+                  <option value="5 a 6">5 a 6 colaboradores</option>
+                  <option value="mais de 6">mais de 6 colaboradores</option>
+                </select>
+              </div>
+            </div>
+            <div style="margin-bottom:18px">
+              <div style="font-size:12px;margin-bottom:9px;color:color-mix(in srgb, var(--color-text) 70%, transparent)">O que mais aperta hoje? (pode marcar mais de um)</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">{{ chips }}</div>
+            </div>
+            <div class="field" style="margin-bottom:18px"><label for="f-msg">Quer contar mais alguma coisa?</label><textarea class="input" id="f-msg" value="{{ msg }}" onChange="{{ setMsg }}" placeholder="Opcional" style="border-radius:var(--radius-md)"></textarea></div>
+            <sc-if value="{{ erro }}" hint-placeholder-val="{{ false }}">
+              <p style="margin:0 0 14px;font-size:13px;color:var(--color-accent-800);background:var(--color-accent-200);padding:10px 14px;border-radius:var(--radius-md)">{{ erroTexto }}</p>
+            </sc-if>
+            <button type="submit" class="btn btn-primary btn-block" style="padding:14px;font-size:15px">Enviar e abrir o WhatsApp</button>
+            <p style="margin:14px 0 0;font-size:12px;line-height:1.55;color:color-mix(in srgb, var(--color-text) 55%, transparent)">Usamos seus dados apenas para responder este contato. Nada de lista de e-mails.</p>
+          </form>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding:56px 0;background:var(--color-neutral-900);color:var(--color-neutral-200)">
+    <div style="width:100%;max-width:1160px;margin:0 auto;padding:0 32px;display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start;justify-content:space-between">
+      <div style="max-width:44ch">
+        <div style="font-family:var(--font-heading);font-size:19px;margin-bottom:10px">{{ brand }}</div>
+        <p style="margin:0;font-size:13.5px;line-height:1.6;color:color-mix(in srgb, #eee7db 70%, transparent)">Consultoria em Departamento Pessoal, Gestão de Pessoas e Comunicação para clínicas de saúde de pequeno porte.</p>
+      </div>
+      <div style="font-size:13.5px;line-height:2;color:color-mix(in srgb, #eee7db 70%, transparent)">
+        <div>Atendimento presencial e remoto</div>
+        <div>Contrato PJ · renovação mensal</div>
+        <div>contato@adefinir.com.br</div>
+      </div>
+    </div>
+  </footer>
+
+  <div style="position:fixed;right:20px;bottom:20px;z-index:80;display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:999px;background:var(--color-neutral-900);box-shadow:var(--shadow-lg)">
+    <span style="font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:color-mix(in srgb, #eee7db 60%, transparent);padding-left:6px">Hero</span>
+    <button type="button" onClick="{{ heroSetA }}" style="{{ hbA }}">A</button>
+    <button type="button" onClick="{{ heroSetB }}" style="{{ hbB }}">B</button>
+    <button type="button" onClick="{{ heroSetC }}" style="{{ hbC }}">C</button>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;brand&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Nome a definir&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;precoIntegrado&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;R$ 4.900&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Investimento&quot;},&quot;precoFrente&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;R$ 1.900&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Investimento&quot;}}">
+const FRENTES = {
+  dp: {
+    tag: 'Ana Paula · 16h/mês',
+    titulo: 'Departamento Pessoal',
+    resumo: 'Todas as rotinas trabalhistas da clínica acompanhadas, documentadas e dentro do prazo — com comunicação organizada entre clínica, colaboradores e contabilidade.',
+    limite: 'O processamento da folha, a geração de guias e a transmissão do eSocial permanecem com a contabilidade contratada pela clínica. Nós organizamos, conferimos e acompanhamos.',
+    itens: [
+      ['Estruturação inicial', 'Conferência de dados cadastrais e contratuais, organização do arquivo funcional, checklists de admissão e desligamento e calendário anual de obrigações.'],
+      ['Admissões e desligamentos', 'Documentos conferidos, exames admissional e demissional acompanhados, orientação do primeiro dia, conferência da rescisão e checklist de devolução de acessos.'],
+      ['Jornada, ponto e folha', 'Conferência das marcações, faltas, atrasos e horas extras; envio organizado à contabilidade e validação da folha depois do processamento.'],
+      ['Férias, afastamentos e benefícios', 'Controle de períodos aquisitivos com alerta antes do vencimento, atestados, retornos ao trabalho e movimentações de benefícios.'],
+      ['13º, obrigações periódicas e eSocial', 'Controle de prazos, organização das informações e conferência dos eventos enviados ao sistema pela contabilidade.'],
+      ['Documentos e indicadores', 'Arquivo digital organizado por colaborador e indicadores simples: headcount, horas extras, férias a vencer e afastamentos.']
+    ]
+  },
+  gp: {
+    tag: 'Jaqueline · 16h/mês',
+    titulo: 'Gestão de Pessoas',
+    resumo: 'A parte humana da clínica com método: cargos definidos, integração acolhedora, conversas que acontecem de verdade e o plano de ação que a NR-1 passou a exigir.',
+    limite: 'O laudo e o diagnóstico de riscos psicossociais são emitidos pela medicina do trabalho. Nós desenvolvemos o plano de ação a partir dele e acompanhamos a execução com registro de evidências.',
+    itens: [
+      ['Cargos e integração', 'Descrição de cargos e funções em uma página por função e um guia de onboarding: primeiros dias, protocolos básicos e quem procurar.'],
+      ['Recrutamento e seleção sob demanda', 'Roteiro de entrevista padronizado para funções de saúde e recepção e apoio na triagem de currículos. Incluído no pacote pelo baixo volume — normalmente cobrado a partir de R$ 3.000.'],
+      ['Feedback e 1:1 quadrimestral', 'Em equipes de até seis pessoas, cabe uma conversa individual com cada colaborador dentro de uma única visita.'],
+      ['Mediação de conflitos', 'Presença pontual e canal neutro para resolver atritos — que pesam muito mais em times pequenos.'],
+      ['Indicadores leves', 'Turnover, absenteísmo e satisfação interna acompanhados com base no diagnóstico da NR-1.'],
+      ['Plano de ação NR-1', 'Desde maio de 2026 o PGR precisa contemplar riscos psicossociais com plano formal: metas, prazos, responsáveis e evidências. É isso que entregamos e acompanhamos.']
+    ]
+  },
+  cm: {
+    tag: 'Bárbara · 16h/mês',
+    titulo: 'Comunicação e Marketing',
+    resumo: 'Presença digital constante e coerente com a rotina real da clínica, conduzida por quem já comunicou laboratório e clínica de imagem: linguagem acessível ao paciente com precisão técnica.',
+    limite: 'Tráfego pago, nova identidade visual e cobertura de eventos ficam fora das 16 horas e são orçados separadamente. Com captação concentrada em uma visita por mês, imprevistos não terão registro fresco até a visita seguinte.',
+    itens: [
+      ['Diagnóstico e linha editorial', 'Levantamento de redes, Google Meu Negócio e site, com tom de voz, temas recorrentes e formatos definidos para a especialidade da clínica.'],
+      ['Captação presencial mensal', 'Fotos e vídeos roteirizados, com e sem fala, abastecendo o conteúdo do mês, mais o alinhamento de pautas com a equipe.'],
+      ['Produção e publicação', 'Edição de fotos e vídeos, roteiros, legendas e copy, com agendamento espaçado ao longo do mês.'],
+      ['Google Meu Negócio', 'Atualização periódica das informações e resposta às avaliações dos pacientes.'],
+      ['Campanha sazonal', 'Uma campanha por mês — data de saúde, prevenção ou evento da clínica — com cards e comunicados de apoio.'],
+      ['Indicadores e relatório', 'Alcance, engajamento e avaliações no Google em um relatório mensal simples, que as sócias conseguem ler sozinhas.']
+    ]
+  }
+};
+
+const DORES = ['Ponto e folha de pagamento', 'Férias e afastamentos', 'Admissões e desligamentos', 'Clima e conflitos na equipe', 'Contratar alguém novo', 'Redes sociais e Google', 'Plano de ação da NR-1'];
+
+class Component extends DCLogic {
+  state = { hero: 'A', frente: 'dp', nome: '', clinica: '', zap: '', colab: '1 a 2', msg: '', dores: [], enviado: false, erro: '' };
+
+  tab(key, label) {
+    const on = this.state.frente === key;
+    return {
+      background: on ? 'var(--color-accent-2-800)' : 'transparent',
+      color: on ? 'var(--color-neutral-100)' : 'var(--color-text)',
+      border: on ? '1px solid var(--color-accent-2-800)' : '1px solid var(--color-divider)',
+      borderRadius: '999px', padding: '11px 22px', cursor: 'pointer',
+      fontFamily: 'var(--font-heading)', fontSize: '14.5px', lineHeight: 1.2
+    };
+  }
+
+  heroBtn(k) {
+    const on = this.state.hero === k;
+    return {
+      width: '28px', height: '28px', borderRadius: '999px', cursor: 'pointer',
+      border: 'none', fontFamily: 'var(--font-heading)', fontSize: '13px',
+      background: on ? 'var(--color-accent-400)' : 'color-mix(in srgb, #eee7db 14%, transparent)',
+      color: on ? 'var(--color-accent-900)' : 'var(--color-neutral-200)'
+    };
+  }
+
+  toggleDor(d) {
+    this.setState(s => ({ dores: s.dores.includes(d) ? s.dores.filter(x => x !== d) : s.dores.concat(d) }));
+  }
+
+  submit(e) {
+    e.preventDefault();
+    const { nome, clinica, zap } = this.state;
+    if (!nome.trim() || !clinica.trim() || !zap.trim()) {
+      this.setState({ erro: 'Preencha nome, clínica e WhatsApp para a gente conseguir responder.' });
+      return;
+    }
+    if (zap.replace(/\D/g, '').length < 10) {
+      this.setState({ erro: 'Confira o número de WhatsApp — parecem faltar dígitos.' });
+      return;
+    }
+    this.setState({ erro: '', enviado: true });
+  }
+
+  renderVals() {
+    const s = this.state;
+    const f = FRENTES[s.frente];
+
+    const itens = f.itens.map(([t, d], i) => ({ n: i + 1, titulo: t, desc: d }));
+
+    const chips = DORES.map(d => {
+      const on = s.dores.includes(d);
+      return React.createElement('button', {
+        key: d, type: 'button', onClick: () => this.toggleDor(d),
+        style: {
+          border: on ? '1px solid var(--color-accent-600)' : '1px solid var(--color-divider)',
+          background: on ? 'var(--color-accent-200)' : 'transparent',
+          color: on ? 'var(--color-accent-800)' : 'var(--color-text)',
+          borderRadius: '999px', padding: '7px 14px', fontSize: '13px', cursor: 'pointer', fontFamily: 'var(--font-body)'
+        }
+      }, d);
+    });
+
+    const linhas = [
+      'Olá! Vim pela landing page.',
+      'Nome: ' + s.nome,
+      'Clínica: ' + s.clinica,
+      'Colaboradores: ' + s.colab,
+      'WhatsApp: ' + s.zap,
+      s.dores.length ? 'Prioridades: ' + s.dores.join(', ') : '',
+      s.msg.trim() ? 'Obs.: ' + s.msg.trim() : ''
+    ].filter(Boolean);
+
+    return {
+      brand: this.props.brand ?? 'Nome a definir',
+      precoIntegrado: this.props.precoIntegrado ?? 'R$ 4.900',
+      precoFrente: this.props.precoFrente ?? 'R$ 1.900',
+      heroA: s.hero === 'A', heroB: s.hero === 'B', heroC: s.hero === 'C',
+      heroSetA: () => this.setState({ hero: 'A' }),
+      heroSetB: () => this.setState({ hero: 'B' }),
+      heroSetC: () => this.setState({ hero: 'C' }),
+      hbA: this.heroBtn('A'), hbB: this.heroBtn('B'), hbC: this.heroBtn('C'),
+      pickDP: () => this.setState({ frente: 'dp' }),
+      pickGP: () => this.setState({ frente: 'gp' }),
+      pickCM: () => this.setState({ frente: 'cm' }),
+      tabStyleDP: this.tab('dp'), tabStyleGP: this.tab('gp'), tabStyleCM: this.tab('cm'),
+      frente: f, itens, chips,
+      nome: s.nome, clinica: s.clinica, zap: s.zap, colab: s.colab, msg: s.msg,
+      setNome: e => this.setState({ nome: e.target.value }),
+      setClinica: e => this.setState({ clinica: e.target.value }),
+      setZap: e => this.setState({ zap: e.target.value }),
+      setColab: e => this.setState({ colab: e.target.value }),
+      setMsg: e => this.setState({ msg: e.target.value }),
+      submit: e => this.submit(e),
+      erro: !!s.erro, erroTexto: s.erro,
+      enviado: s.enviado, formAberto: !s.enviado,
+      primeiroNome: (s.nome.trim().split(' ')[0] || ''),
+      waLink: 'https://wa.me/?text=' + encodeURIComponent(linhas.join('\n')),
+      resetForm: () => this.setState({ enviado: false, nome: '', clinica: '', zap: '', msg: '', dores: [], erro: '' })
+    };
+  }
+}
+</script>
+</body>
+</html>
+
+// GENERATED from dc-runtime/src/*.ts — do not edit. Rebuild with `cd dc-runtime && bun run build`.
+"use strict";
+(() => {
+  var __defProp = Object.defineProperty;
+  var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+  var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+
+  // src/react.ts
+  function getReact() {
+    const R = window.React;
+    if (!R) throw new Error("dc-runtime: window.React is not available yet");
+    return R;
+  }
+  function getReactDOM() {
+    const RD = window.ReactDOM;
+    if (!RD) throw new Error("dc-runtime: window.ReactDOM is not available yet");
+    return RD;
+  }
+  var h = ((...args) => getReact().createElement(
+    ...args
+  ));
+
+  // src/parse.ts
+  function parseDcDocument(doc) {
+    const dc = doc.querySelector("x-dc");
+    if (!dc) return null;
+    const scriptEl = doc.querySelector("script[data-dc-script]");
+    const { props, preview } = parseDataProps(
+      scriptEl?.getAttribute("data-props") ?? null
+    );
+    return {
+      template: dc.innerHTML,
+      js: scriptEl ? scriptEl.textContent || "" : "",
+      props,
+      preview
+    };
+  }
+  function parseDcText(src) {
+    const openMatch = /<x-dc(?:\s[^>]*)?>/.exec(src);
+    if (!openMatch) return null;
+    const close = src.lastIndexOf("</x-dc>");
+    if (close === -1 || close < openMatch.index) return null;
+    const template = src.slice(openMatch.index + openMatch[0].length, close);
+    const doc = new DOMParser().parseFromString(src, "text/html");
+    const scriptEl = doc.querySelector("script[data-dc-script]");
+    const { props, preview } = parseDataProps(
+      scriptEl?.getAttribute("data-props") ?? null
+    );
+    return {
+      template,
+      js: scriptEl ? scriptEl.textContent || "" : "",
+      props,
+      preview
+    };
+  }
+  function parseDataProps(raw) {
+    if (!raw) return { props: null, preview: null };
+    let parsed;
+    try {
+      parsed = JSON.parse(raw);
+    } catch {
+      return { props: null, preview: null };
+    }
+    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+      return { props: null, preview: null };
+    }
+    const obj = parsed;
+    const preview = obj.$preview && typeof obj.$preview === "object" ? obj.$preview : null;
+    const rest = {};
+    for (const k of Object.keys(obj)) {
+      if (k[0] !== "$") rest[k] = obj[k];
+    }
+    return { props: Object.keys(rest).length ? rest : null, preview };
+  }
+  function dcNameFromPath(pathname) {
+    let p = pathname || "";
+    try {
+      p = decodeURIComponent(p);
+    } catch {
+    }
+    const base = p.split("/").pop() || "Root";
+    return base.replace(/\.dc\.html$/, "").replace(/\.html?$/, "") || "Root";
+  }
+
+  // src/boot.ts
+  var BASE_CSS = `
+    .sc-placeholder{background:color-mix(in srgb,currentColor 8%,transparent);
+      border:1px solid color-mix(in srgb,currentColor 50%,transparent);
+      border-radius:2px;box-sizing:border-box;overflow:hidden}
+    @keyframes sc-shine{0%{background-position:100% 50%}100%{background-position:0% 50%}}
+    html.sc-dc-streaming .sc-placeholder,
+    html.sc-dc-streaming .sc-interp.sc-missing{position:relative;
+      background:color-mix(in srgb,currentColor 5%,transparent);
+      border-color:transparent}
+    html.sc-dc-streaming .sc-placeholder::before,
+    html.sc-dc-streaming .sc-interp.sc-missing::before{content:'';
+      position:absolute;inset:0;pointer-events:none;
+      background:linear-gradient(90deg,rgba(217,119,87,0) 25%,rgba(247,225,211,.95) 37%,rgba(217,119,87,0) 63%);
+      background-size:400% 100%;animation:sc-shine 1.4s ease infinite}
+    html.sc-dc-streaming .sc-placeholder:nth-child(n+9 of .sc-placeholder)::before,
+    html.sc-dc-streaming .sc-interp.sc-missing:nth-child(n+9 of .sc-interp.sc-missing)::before{animation:none;
+      background:color-mix(in srgb,currentColor 8%,transparent)}
+    .sc-placeholder-error{padding:4px 8px;font:11px/1.4 ui-monospace,monospace;
+      color:color-mix(in srgb,currentColor 70%,transparent);word-break:break-word}
+    .sc-interp.sc-missing{display:inline-block;width:2em;height:1em;overflow:hidden;
+      vertical-align:text-bottom;background:rgba(255,255,255,.3);border:1px solid rgba(0,0,0,.5);
+      border-radius:2px;box-sizing:border-box;color:transparent;
+      user-select:none}
+    .sc-interp.sc-unresolved{font-family:ui-monospace,monospace;font-size:.85em;
+      color:color-mix(in srgb,currentColor 50%,transparent);
+      background:color-mix(in srgb,currentColor 10%,transparent);border-radius:3px;
+      padding:0 3px}
+    .sc-host.sc-has-error{position:relative}
+    .sc-logic-error{position:absolute;top:8px;left:8px;z-index:2147483647;max-width:60ch;
+      padding:6px 10px;background:#b00020;color:#fff;font:12px/1.4 ui-monospace,monospace;
+      border-radius:4px;white-space:pre-wrap;pointer-events:none}
+    /* Mirrors PRINT_BASELINE_CSS in apps/web deck-stage-export.ts \u2014 keep both
+       in sync until dc-runtime regains a build step. */
+    @media print {
+      @page { margin: 0.5cm; }
+      figure, table { break-inside: avoid; }
+      #dc-root, #dc-root > .sc-host { height: auto; }
+      *, *::before, *::after {
+        print-color-adjust: exact; -webkit-print-color-adjust: exact;
+        backdrop-filter: none !important; -webkit-backdrop-filter: none !important;
+        animation-delay: -99s !important; animation-duration: .001s !important;
+        animation-iteration-count: 1 !important; animation-fill-mode: both !important;
+        animation-play-state: running !important; transition-duration: 0s !important;
+      }
+    }
+  `;
+  var FULL_PAGE_CSS = "html,body{height:100%;margin:0}#dc-root,#dc-root>.sc-host{height:100%}";
+  function rootNameForDocument(doc, loc) {
+    let bootPath = loc.pathname || "";
+    if (!/\.dc\.html?$/i.test(safeDecode(bootPath))) {
+      try {
+        bootPath = new URL(doc.baseURI || "/").pathname;
+      } catch {
+      }
+    }
+    return dcNameFromPath(bootPath);
+  }
+  function safeDecode(s) {
+    try {
+      return decodeURIComponent(s);
+    } catch {
+      return s;
+    }
+  }
+  function boot(runtime, doc = document) {
+    const parsed = parseDcDocument(doc);
+    if (!parsed) return null;
+    const React = getReact();
+    const rootName = rootNameForDocument(doc, location);
+    runtime.markFetched(rootName);
+    runtime.setRootName(rootName);
+    runtime.adoptParsed(rootName, parsed);
+    if (!window.__resources) {
+      fetch(location.href).then((res) => res.ok ? res.text() : "").then((t) => {
+        const raw = t ? parseDcText(t) : null;
+        if (raw?.template) runtime.updateHtml(rootName, raw.template);
+      }).catch(() => {
+      });
+    }
+    const dc = doc.querySelector("x-dc");
+    const hostEl = doc.createElement("div");
+    hostEl.id = "dc-root";
+    dc.replaceWith(hostEl);
+    if (!parsed.preview) {
+      const s = doc.createElement("style");
+      s.textContent = FULL_PAGE_CSS;
+      doc.head.appendChild(s);
+    }
+    const Root = runtime.getDC(rootName);
+    const entry = runtime.registry.get(rootName);
+    function StandaloneRoot() {
+      const [, setTick] = React.useState(0);
+      React.useEffect(() => {
+        const sub = () => setTick((n) => n + 1);
+        entry.subs.add(sub);
+        return () => {
+          entry.subs.delete(sub);
+        };
+      }, []);
+      const defaults = React.useMemo(() => {
+        const d = {};
+        for (const k in entry.propsMeta || {}) {
+          const v = entry.propsMeta?.[k]?.default;
+          if (v !== void 0) d[k] = v;
+        }
+        return d;
+      }, [entry.propsMeta]);
+      return h(Root, { ...defaults, ...entry.propOverrides || {} });
+    }
+    const ReactDOM = getReactDOM();
+    if (ReactDOM.createRoot)
+      ReactDOM.createRoot(hostEl).render(h(StandaloneRoot));
+    else ReactDOM.render(h(StandaloneRoot), hostEl);
+    return rootName;
+  }
+
+  // src/expr.ts
+  var IDENT_RE = /^[A-Za-z_$][A-Za-z0-9_$]*/;
+  var NUMBER_RE = /^-?\d+(\.\d+)?$/;
+  function resolve(vals, src) {
+    const expr = String(src).trim();
+    if (!expr) return void 0;
+    if (expr[0] === "(" && expr[expr.length - 1] === ")" && parensWrapWhole(expr)) {
+      return resolve(vals, expr.slice(1, -1));
+    }
+    const eq = findTopLevelEquality(expr);
+    if (eq) {
+      const lv = resolve(vals, expr.slice(0, eq.index));
+      const rv = resolve(vals, expr.slice(eq.index + eq.op.length));
+      switch (eq.op) {
+        case "===":
+          return lv === rv;
+        case "!==":
+          return lv !== rv;
+        case "==":
+          return lv == rv;
+        default:
+          return lv != rv;
+      }
+    }
+    if (expr[0] === "!") return !resolve(vals, expr.slice(1));
+    if (expr === "true") return true;
+    if (expr === "false") return false;
+    if (expr === "null") return null;
+    if (expr === "undefined") return void 0;
+    if (NUMBER_RE.test(expr)) return Number(expr);
+    if (expr.length >= 2 && (expr[0] === '"' || expr[0] === "'") && expr[expr.length - 1] === expr[0]) {
+      return expr.slice(1, -1);
+    }
+    return resolvePath(vals, expr);
+  }
+  function parensWrapWhole(expr) {
+    let depth = 0;
+    for (let i = 0; i < expr.length - 1; i++) {
+      if (expr[i] === "(") depth++;
+      else if (expr[i] === ")") {
+        depth--;
+        if (depth === 0) return false;
+      }
+    }
+    return true;
+  }
+  function findTopLevelEquality(expr) {
+    let depth = 0;
+    for (let i = 0; i < expr.length; i++) {
+      const c = expr[i];
+      if (c === "[" || c === "(") depth++;
+      else if (c === "]" || c === ")") depth--;
+      else if (depth === 0 && (c === "=" || c === "!") && expr[i + 1] === "=") {
+        if (i > 0 && (expr[i - 1] === "=" || expr[i - 1] === "!")) continue;
+        if (!expr.slice(0, i).trim()) continue;
+        const op = expr[i + 2] === "=" ? c + "==" : c + "=";
+        return { index: i, op };
+      }
+    }
+    return null;
+  }
+  function resolvePath(vals, expr) {
+    const head = expr.match(IDENT_RE);
+    if (!head) return void 0;
+    let cur = vals == null ? void 0 : vals[head[0]];
+    let i = head[0].length;
+    while (i < expr.length) {
+      if (expr[i] === ".") {
+        const m = expr.slice(i + 1).match(IDENT_RE) || expr.slice(i + 1).match(/^\d+/);
+        if (!m) return void 0;
+        cur = cur == null ? void 0 : cur[m[0]];
+        i += 1 + m[0].length;
+      } else if (expr[i] === "[") {
+        let depth = 1;
+        let j = i + 1;
+        while (j < expr.length && depth > 0) {
+          if (expr[j] === "[") depth++;
+          else if (expr[j] === "]") {
+            depth--;
+            if (depth === 0) break;
+          }
+          j++;
+        }
+        if (depth !== 0) return void 0;
+        const key = resolve(vals, expr.slice(i + 1, j));
+        cur = cur == null ? void 0 : cur[key];
+        i = j + 1;
+      } else {
+        return void 0;
+      }
+    }
+    return cur;
+  }
+
+  // src/encode.ts
+  var CAMEL_ATTR = "sc-camel-";
+  var INLINE_TEXT_TAGS = new Set(
+    "a abbr b bdi bdo br cite code del dfn em i ins kbd mark q s samp small span strike strong sub sup u var wbr".split(
+      " "
+    )
+  );
+  var RAW_WRAP = {
+    select: "sc-raw-select",
+    table: "sc-raw-table",
+    tbody: "sc-raw-tbody",
+    thead: "sc-raw-thead",
+    tfoot: "sc-raw-tfoot",
+    tr: "sc-raw-tr",
+    td: "sc-raw-td",
+    th: "sc-raw-th",
+    caption: "sc-raw-caption"
+  };
+  var RAW_UNWRAP = Object.fromEntries(
+    Object.entries(RAW_WRAP).map(([k, v]) => [v, k])
+  );
+  var EVENT_MAP = {
+    onclick: "onClick",
+    onchange: "onChange",
+    oninput: "onInput",
+    onsubmit: "onSubmit",
+    onkeydown: "onKeyDown",
+    onkeyup: "onKeyUp",
+    onkeypress: "onKeyPress",
+    onmousedown: "onMouseDown",
+    onmouseup: "onMouseUp",
+    onmouseenter: "onMouseEnter",
+    onmouseleave: "onMouseLeave",
+    onfocus: "onFocus",
+    onblur: "onBlur",
+    ondoubleclick: "onDoubleClick",
+    oncontextmenu: "onContextMenu",
+    onmousemove: "onMouseMove",
+    onmouseover: "onMouseOver",
+    onmouseout: "onMouseOut",
+    onpointerdown: "onPointerDown",
+    onpointerup: "onPointerUp",
+    onpointermove: "onPointerMove",
+    onpointerenter: "onPointerEnter",
+    onpointerleave: "onPointerLeave",
+    onpointercancel: "onPointerCancel",
+    onpointerover: "onPointerOver",
+    onpointerout: "onPointerOut",
+    ongotpointercapture: "onGotPointerCapture",
+    onlostpointercapture: "onLostPointerCapture",
+    ontouchstart: "onTouchStart",
+    ontouchend: "onTouchEnd",
+    ontouchmove: "onTouchMove",
+    ontouchcancel: "onTouchCancel",
+    ondragstart: "onDragStart",
+    ondragend: "onDragEnd",
+    ondragenter: "onDragEnter",
+    ondragleave: "onDragLeave",
+    ondragover: "onDragOver",
+    onanimationstart: "onAnimationStart",
+    onanimationend: "onAnimationEnd",
+    onanimationiteration: "onAnimationIteration",
+    ontransitionend: "onTransitionEnd"
+  };
+  var ATTRS = `(?:[^>"']|"[^"]*"|'[^']*')*`;
+  var IMPORT_SELF_CLOSE_RE = new RegExp(
+    "<(x-import|dc-import)(" + ATTRS + ")/>",
+    "gi"
+  );
+  var CAMEL_ATTR_RE = /(\s)([a-z]+[A-Z][A-Za-z0-9]*)(\s*=)/g;
+  function encodeCamelAttrs(html) {
+    return html.replace(
+      CAMEL_ATTR_RE,
+      (_, sp, name, eq) => sp + CAMEL_ATTR + name.replace(/[A-Z]/g, (c) => "-" + c.toLowerCase()) + eq
+    );
+  }
+  function encodeCase(html) {
+    html = html.replace(
+      IMPORT_SELF_CLOSE_RE,
+      (_, t, a) => "<" + t + a + "></" + t + ">"
+    );
+    html = html.replace(/<helmet(\s|>)/gi, "<sc-helmet$1");
+    html = html.replace(/<\/helmet\s*>/gi, "</sc-helmet>");
+    html = encodeCamelAttrs(html);
+    for (const [real, alias] of Object.entries(RAW_WRAP)) {
+      html = html.replace(
+        new RegExp("(</?)" + real + "(?=[\\s>])", "gi"),
+        "$1" + alias
+      );
+    }
+    return html;
+  }
+  function kebabToCamel(s) {
+    return s.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
+  }
+  function cssToObj(css) {
+    const o = {};
+    for (const decl of css.split(";")) {
+      const i = decl.indexOf(":");
+      if (i < 0) continue;
+      const prop = decl.slice(0, i).trim();
+      o[prop.startsWith("--") ? prop : kebabToCamel(prop)] = decl.slice(i + 1).trim();
+    }
+    return o;
+  }
+  function compileAttr(raw) {
+    const whole = raw.match(/^\s*\{\{([\s\S]+?)\}\}\s*$/);
+    if (whole) {
+      const path = whole[1];
+      return (vals) => resolve(vals, path);
+    }
+    if (raw.includes("{{")) {
+      const parts = raw.split(/\{\{([\s\S]+?)\}\}/g);
+      return (vals) => parts.map((s, i) => i & 1 ? resolve(vals, s) ?? "" : s).join("");
+    }
+    return () => raw;
+  }
+
+  // src/compile.ts
+  function collectProps(node, kind, host) {
+    const propGetters = [];
+    const pseudoClasses = [];
+    let hintSize = null;
+    for (const { name, value } of [...node.attributes]) {
+      if (name === "sc-name" || name === "data-dc-tpl") continue;
+      let key = name;
+      if (key.startsWith(CAMEL_ATTR))
+        key = kebabToCamel(key.slice(CAMEL_ATTR.length));
+      if (key === "hint-size") {
+        hintSize = value;
+        continue;
+      }
+      if (key.startsWith("style-")) {
+        pseudoClasses.push(host.pseudoClass(key.slice(6), value));
+        continue;
+      }
+      if (kind !== "dom") {
+        if (key.includes("-") && !(kind === "x-import" && (key.startsWith("aria-") || key.startsWith("data-"))))
+          key = kebabToCamel(key);
+      } else {
+        if (key === "class") key = "className";
+        else if (key === "for") key = "htmlFor";
+        else if (key.startsWith("on"))
+          key = EVENT_MAP[key] || "on" + key[2].toUpperCase() + key.slice(3);
+      }
+      propGetters.push([key, compileAttr(value)]);
+    }
+    return { propGetters, pseudoClasses, hintSize };
+  }
+  var HOST_STYLE_PROPS = /* @__PURE__ */ new Set([
+    "position",
+    "left",
+    "right",
+    "top",
+    "bottom",
+    "inset",
+    "width",
+    "height",
+    "z-index",
+    "transform"
+  ]);
+  function hostPositionStyle(style) {
+    const all = typeof style === "string" ? cssToObj(style) : style != null && typeof style === "object" ? style : null;
+    if (!all) return void 0;
+    const out = {};
+    for (const [k, v] of Object.entries(all)) {
+      const kebab = k.replace(/[A-Z]/g, (c) => "-" + c.toLowerCase());
+      if (HOST_STYLE_PROPS.has(kebab)) out[k] = v;
+    }
+    return Object.keys(out).length ? out : void 0;
+  }
+  function compileTemplate(html, host) {
+    const tpl = document.createElement("template");
+    //! nosemgrep: direct-inner-html-assignment
+    tpl.innerHTML = encodeCase(html);
+    let tplN = 0;
+    (function stamp(node) {
+      if (node.nodeType === Node.ELEMENT_NODE) {
+        node.setAttribute("data-dc-tpl", String(tplN++));
+      }
+      for (const c of node.childNodes) stamp(c);
+    })(tpl.content);
+    const builders = walkChildren(tpl.content, host);
+    const render = ((vals, ctx) => builders.map((b, i) => b(vals || {}, ctx, i)));
+    render.__annotated = tpl.innerHTML;
+    return render;
+  }
+  function walkChildren(node, host) {
+    return [...node.childNodes].map((c) => walk(c, host)).filter((b) => b != null);
+  }
+  var SLIDE_ID_VALUE_RE = /^[0-9a-f]{8}$/;
+  var DECK_CONTROL_FLOW_RE = /^(sc-if|sc-for|sc-else|dc-import|x-import)$/;
+  var DECK_AUX_RE = /^(template|script|style|sc-helmet|helmet)$/;
+  function isDeckMountTag(el) {
+    if (el.localName === "deck-stage") return true;
+    return el.localName === "x-import" && (el.getAttribute("component-from-global-scope") || "") === "deck-stage";
+  }
+  function walkDeckChildren(el, host) {
+    const pairs = [...el.childNodes].map((c) => ({ c, b: walk(c, host) })).filter((p) => p.b !== null);
+    const kids = pairs.map((p) => p.b);
+    const seen = /* @__PURE__ */ new Set();
+    const wsSeen = /* @__PURE__ */ new Map();
+    const keys = [];
+    const nextSlideId = new Array(pairs.length);
+    {
+      let upcoming = null;
+      for (let j = pairs.length - 1; j >= 0; j--) {
+        const n = pairs[j].c;
+        if (n.nodeType === Node.ELEMENT_NODE) {
+          const t = n.localName;
+          upcoming = !DECK_AUX_RE.test(t) && !DECK_CONTROL_FLOW_RE.test(t) ? n.getAttribute("data-om-slide-id") : null;
+        }
+        nextSlideId[j] = upcoming;
+      }
+    }
+    for (let j = 0; j < pairs.length; j++) {
+      const { c } = pairs[j];
+      if (c.nodeType === Node.TEXT_NODE) {
+        if ((c.nodeValue ?? "").trim() === "") {
+          const base = nextSlideId[j] ? "omid-ws:" + nextSlideId[j] : "omid-ws:aux";
+          const n = wsSeen.get(base) ?? 0;
+          wsSeen.set(base, n + 1);
+          keys.push(n === 0 ? base : base + ":" + n);
+          continue;
+        }
+        return { kids, keys: null };
+      }
+      if (c.nodeType !== Node.ELEMENT_NODE) {
+        keys.push(j);
+        continue;
+      }
+      const child = c;
+      const tag = child.localName;
+      if (DECK_AUX_RE.test(tag)) {
+        keys.push(j);
+        continue;
+      }
+      if (DECK_CONTROL_FLOW_RE.test(tag)) return { kids, keys: null };
+      const v = child.getAttribute("data-om-slide-id");
+      if (!v || !SLIDE_ID_VALUE_RE.test(v) || seen.has(v)) {
+        return { kids, keys: null };
+      }
+      seen.add(v);
+      keys.push("omid:" + v);
+    }
+    return { kids, keys };
+  }
+  function renderDeckKids(kids, kidKeys, vals, ctx) {
+    return kids.map((b, j) => {
+      const k = kidKeys ? kidKeys[j] : j;
+      const out = b(vals, ctx, k);
+      return kidKeys != null && typeof out === "string" ? h(getReact().Fragment, { key: k }, out) : out;
+    });
+  }
+  function walk(node, host) {
+    if (node.nodeType === Node.TEXT_NODE) return walkText(node);
+    if (node.nodeType !== Node.ELEMENT_NODE) return null;
+    const el = node;
+    const tag = el.tagName.toLowerCase();
+    if (tag === "sc-for") return walkFor(el, host);
+    if (tag === "sc-if") return walkIf(el, host);
+    if (tag === "x-import") return walkXImport(el, host);
+    if (tag === "sc-helmet") return host.helmet(el);
+    if (tag === "dc-import") return walkComponent(el, host);
+    return walkElement(el, host);
+  }
+  var warnedHoles = /* @__PURE__ */ new Set();
+  function warnUnresolved(ctx, what) {
+    const key = (ctx?.__name || "?") + "\0" + what;
+    if (warnedHoles.has(key)) return;
+    warnedHoles.add(key);
+    console.warn("[dc-runtime] " + (ctx?.__name || "template") + ": " + what);
+  }
+  function walkText(node) {
+    const txt = node.nodeValue ?? "";
+    if (!txt.includes("{{")) {
+      if (!txt.trim() && !txt.includes(" ")) return null;
+      return () => txt;
+    }
+    const parts = txt.split(/\{\{([\s\S]+?)\}\}/g);
+    return (vals, ctx, key) => h(
+      getReact().Fragment,
+      { key },
+      ...parts.map((p, i) => {
+        if (!(i & 1)) return p;
+        const v = resolve(vals, p);
+        if (v === void 0) {
+          if (!ctx?.__streamingNow) {
+            if (document.body?.hasAttribute("data-dc-editor-on")) {
+              return h(
+                "span",
+                { key: i, className: "sc-interp sc-unresolved" },
+                "{{ " + p.trim() + " }}"
+              );
+            }
+            warnUnresolved(
+              ctx,
+              "{{ " + p.trim() + " }} never resolved \u2014 rendered as empty"
+            );
+            return null;
+          }
+          return h(
+            "span",
+            { key: i, className: "sc-interp sc-missing" },
+            p.trim()
+          );
+        }
+        if (getReact().isValidElement(v) || Array.isArray(v)) {
+          return h(getReact().Fragment, { key: i }, v);
+        }
+        if (v === null || typeof v === "boolean") return null;
+        return h("span", { key: i, className: "sc-interp" }, String(v));
+      })
+    );
+  }
+  function walkFor(el, host) {
+    const listGet = compileAttr(el.getAttribute("list") || "");
+    const asName = el.getAttribute("as") || "item";
+    const hintN = parseInt(el.getAttribute("hint-placeholder-count") || "0", 10);
+    const kids = walkChildren(el, host);
+    const listSrc = el.getAttribute("list") || "";
+    return (vals, ctx, key) => {
+      let list = listGet(vals);
+      if (!Array.isArray(list)) {
+        if (!ctx?.__streamingNow) {
+          if (list !== void 0 && list !== null) {
+            warnUnresolved(
+              ctx,
+              'sc-for list="' + listSrc + '" is not an array (' + typeof list + ")"
+            );
+          }
+          list = [];
+        } else {
+          list = hintN > 0 ? Array(hintN).fill(void 0) : [];
+        }
+      }
+      return h(
+        getReact().Fragment,
+        { key },
+        list.map((item, i) => {
+          const sub = { ...vals, [asName]: item, $index: i };
+          return h(
+            getReact().Fragment,
+            { key: i },
+            kids.map((b, j) => b(sub, ctx, j))
+          );
+        })
+      );
+    };
+  }
+  function walkIf(el, host) {
+    const valGet = compileAttr(el.getAttribute("value") || "");
+    const hintRaw = el.getAttribute("hint-placeholder-val");
+    const hintGet = hintRaw != null ? compileAttr(hintRaw) : null;
+    const kids = walkChildren(el, host);
+    return (vals, ctx, key) => {
+      let v = valGet(vals);
+      if (v === void 0 && hintGet && ctx?.__streamingNow) v = hintGet(vals);
+      return v ? h(
+        getReact().Fragment,
+        { key },
+        kids.map((b, j) => b(vals, ctx, j))
+      ) : null;
+    };
+  }
+  function walkComponent(el, host) {
+    const name = el.getAttribute("name") || el.getAttribute("component") || "";
+    el.removeAttribute("name");
+    el.removeAttribute("component");
+    const tplId = el.getAttribute("data-dc-tpl");
+    const styleRaw = el.getAttribute("style");
+    el.removeAttribute("style");
+    const styleGet = styleRaw != null ? compileAttr(styleRaw) : null;
+    const { propGetters, hintSize } = collectProps(el, "dc-import", host);
+    const kids = walkChildren(el, host);
+    return (vals, ctx, key) => {
+      const props = {
+        key,
+        __hintSize: hintSize,
+        __tplId: tplId,
+        __hostStyle: styleGet ? hostPositionStyle(styleGet(vals)) : void 0
+      };
+      for (const [k, g] of propGetters) {
+        const v = g(vals);
+        if (k === "dcProps") {
+          if (v && typeof v === "object") Object.assign(props, v);
+          continue;
+        }
+        props[k] = v;
+      }
+      if (kids.length) props.children = kids.map((b, j) => b(vals, ctx, j));
+      return h(host.component(name), props);
+    };
+  }
+  function walkXImport(el, host) {
+    const globalNameGet = compileAttr(
+      el.getAttribute("component-from-global-scope") || ""
+    );
+    const exportNameGet = compileAttr(
+      el.getAttribute("component") || el.getAttribute("name") || ""
+    );
+    const fromRaw = el.getAttribute("from") || (el.getAttribute("component-from-global-scope") ? "" : el.getAttribute("src") || el.getAttribute("import") || "");
+    const urls = fromRaw.trim() ? fromRaw.trim().split(/\s+/) : [];
+    const url = urls.length ? urls[urls.length - 1] : "";
+    const kindOf = (u) => /\.(jsx|tsx)(\?|#|$)/i.test(u) ? "jsx" : "js";
+    const tplId = el.getAttribute("data-dc-tpl");
+    const styleRaw = el.getAttribute("style");
+    el.removeAttribute("style");
+    const styleGet = styleRaw != null ? compileAttr(styleRaw) : null;
+    const wrap = tplId != null || styleGet != null;
+    const { propGetters, hintSize } = collectProps(el, "x-import", host);
+    const hasContent = el.children.length > 0 || !!(el.textContent || "").trim();
+    const deckKeyed = hasContent && isDeckMountTag(el) ? walkDeckChildren(el, host) : null;
+    const kids = deckKeyed ? deckKeyed.kids : hasContent ? walkChildren(el, host) : [];
+    const kidKeys = deckKeyed?.keys ?? null;
+    const urlBindable = fromRaw.includes("{{");
+    if (urls.length && !urlBindable) {
+      let prev;
+      for (const u of urls) prev = host.loadExternal(kindOf(u), u, prev);
+    }
+    const evalName = (g, vals) => {
+      const v = g(vals);
+      const s = v == null ? "" : String(v);
+      return s.includes("{{") ? "" : s;
+    };
+    return (vals, ctx, key) => {
+      const globalName = evalName(globalNameGet, vals);
+      const name = globalName || evalName(exportNameGet, vals);
+      const C = !name || urlBindable ? null : globalName ? host.resolveExternalGlobal(url, globalName) : host.resolveExternal(url, name);
+      const hostStyle = styleGet ? hostPositionStyle(styleGet(vals)) : void 0;
+      const wrapper = wrap ? {
+        key,
+        className: "sc-host-x",
+        "data-dc-tpl": tplId,
+        style: hostStyle || { display: "contents" }
+      } : null;
+      if (!C) {
+        const error = urlBindable ? "x-import `from` cannot contain {{ \u2026 }} \u2014 module URLs are resolved at parse time; use a literal URL" : host.resolveExternalError(url, name);
+        const ph = host.placeholder({
+          key: wrapper ? void 0 : key,
+          name,
+          hintSize,
+          error
+        });
+        return wrapper ? h("div", wrapper, ph) : ph;
+      }
+      const props = wrapper ? {} : { key };
+      let unresolvedHole = false;
+      for (const [k, g] of propGetters) {
+        if (k === "component" || k === "componentFromGlobalScope" || k === "from") {
+          continue;
+        }
+        const v = g(vals);
+        if (v === void 0) unresolvedHole = true;
+        if (k === "dcProps") {
+          if (v && typeof v === "object") Object.assign(props, v);
+          continue;
+        }
+        props[k] = v;
+      }
+      if (unresolvedHole && ctx?.__htmlStreamingNow) {
+        const ph = host.placeholder({
+          key: wrapper ? void 0 : key,
+          name,
+          hintSize,
+          error: null
+        });
+        return wrapper ? h("div", wrapper, ph) : ph;
+      }
+      if (kids.length) {
+        props.children = renderDeckKids(kids, kidKeys, vals, ctx);
+      }
+      return wrapper ? h("div", wrapper, h(C, props)) : h(C, props);
+    };
+  }
+  function contentKey(el) {
+    const clone = el.cloneNode(true);
+    for (const d of clone.querySelectorAll("*")) {
+      while (d.attributes.length) d.removeAttribute(d.attributes[0].name);
+    }
+    const s = clone.innerHTML;
+    let h2 = 5381;
+    for (let i = 0; i < s.length; i++) h2 = (h2 << 5) + h2 + s.charCodeAt(i) | 0;
+    return s.length + "." + (h2 >>> 0).toString(36);
+  }
+  var NEVER_CONTENT_KEYED = new Set(
+    "script style textarea option title select canvas iframe video audio".split(
+      " "
+    )
+  );
+  var NOT_INLINE_SELECTOR = ":not(" + [...INLINE_TEXT_TAGS].join(",") + ")";
+  function walkElement(el, host) {
+    const realTag = RAW_UNWRAP[el.localName] || el.localName;
+    const tplId = el.getAttribute("data-dc-tpl");
+    const inlineOnly = el.childNodes.length > 0 && !NEVER_CONTENT_KEYED.has(realTag) && el.querySelector(NOT_INLINE_SELECTOR) === null;
+    const keySuffix = inlineOnly ? "|" + contentKey(el) : "";
+    const { propGetters, pseudoClasses } = collectProps(el, "dom", host);
+    const deckKeyed = isDeckMountTag(el) ? walkDeckChildren(el, host) : null;
+    const kids = deckKeyed ? deckKeyed.kids : walkChildren(el, host);
+    const kidKeys = deckKeyed?.keys ?? null;
+    return (vals, ctx, key) => {
+      const props = {
+        key: key + keySuffix,
+        "data-dc-tpl": tplId
+      };
+      for (const [k, g] of propGetters) {
+        let v = g(vals);
+        if (k === "style" && typeof v === "string") v = cssToObj(v);
+        if ((k === "value" || k === "checked") && v === void 0) {
+          v = k === "checked" ? false : "";
+        }
+        props[k] = v;
+      }
+      if (pseudoClasses.length) {
+        props.className = [props.className, ...pseudoClasses].filter(Boolean).join(" ");
+      }
+      return h(realTag, props, ...renderDeckKids(kids, kidKeys, vals, ctx));
+    };
+  }
+
+  // src/logic.ts
+  var StreamableLogic = class {
+    constructor(props) {
+      __publicField(this, "props");
+      __publicField(this, "state", {});
+      /** Back-pointer to the wrapper component, installed after construction. */
+      __publicField(this, "__host");
+      this.props = props || {};
+    }
+    setState(update, cb) {
+      this.__host && this.__host.__setLogicState(update, cb);
+    }
+    forceUpdate() {
+      this.__host && this.__host.forceUpdate();
+    }
+    componentDidMount() {
+    }
+    componentDidUpdate(_prevProps) {
+    }
+    componentWillUnmount() {
+    }
+    /** The flat object the template renders against (merged over props). */
+    renderVals() {
+      return {};
+    }
+  };
+  function evalDcLogic(src) {
+    //! nosemgrep: eval-and-function-constructor
+    const fn = new Function(
+      "DCLogic",
+      "StreamableLogic",
+      "React",
+      src + '\n;return (typeof Component!=="undefined"&&Component)||undefined;'
+    );
+    return fn(StreamableLogic, StreamableLogic, getReact());
+  }
+
+  // src/component.ts
+  function shallowEqual(a, b) {
+    if (!b) return false;
+    const ak = Object.keys(a).filter((k) => k !== "children");
+    const bk = Object.keys(b).filter((k) => k !== "children");
+    if (ak.length !== bk.length) return false;
+    for (const k of ak) if (a[k] !== b[k]) return false;
+    return true;
+  }
+  function Placeholder({
+    name,
+    hintSize,
+    streaming,
+    error
+  }) {
+    const [w, hgt] = (hintSize || "100%,60px").split(",");
+    return h(
+      "div",
+      {
+        className: "sc-placeholder" + (streaming ? " sc-streaming" : ""),
+        style: { width: w.trim(), height: hgt && hgt.trim() },
+        title: name
+      },
+      error ? h(
+        "div",
+        { className: "sc-placeholder-error" },
+        (name ? name + ": " : "") + error
+      ) : null
+    );
+  }
+  function hintToMin(hint) {
+    if (!hint) return void 0;
+    const [w, hgt] = hint.split(",");
+    return { minWidth: w.trim(), minHeight: hgt && hgt.trim() };
+  }
+  function createComponentFactory(registry, ensureFetched) {
+    const React = getReact();
+    const AncestorContext = React.createContext([]);
+    class StreamableComponent extends React.Component {
+      constructor(props) {
+        super(props);
+        __publicField(this, "__name");
+        __publicField(this, "__sub");
+        __publicField(this, "__needsDidMount", false);
+        /** Snapshot of the registry's streaming flags taken at render time —
+         *  builders read it off the RenderCtx (this) to pick placeholder vs
+         *  render-nothing for unresolved values. */
+        __publicField(this, "__streamingNow", false);
+        __publicField(this, "__htmlStreamingNow", false);
+        /** When a construct throws, remember the (class, registry.ver, props)
+         *  triple so render-time reconcile doesn't re-attempt it on every parent
+         *  re-render. A registry bump (new class, template, external module
+         *  resolving via bumpAll) changes `ver` and breaks the memo so an
+         *  env-dependent constructor can self-heal. */
+        __publicField(this, "__failedLogic", null);
+        __publicField(this, "__failedUserProps", null);
+        __publicField(this, "__failedVer", -1);
+        /** Per-instance constructor error — kept here (not on the registry entry)
+         *  so one instance's successful construct can't hide a sibling's failure,
+         *  and a construct can never wipe an eval error `updateJs` recorded on
+         *  `r.logicError`. */
+        __publicField(this, "__ctorError", null);
+        __publicField(this, "logic");
+        this.__name = props.__name;
+        this.state = { __v: 0, __err: null };
+        this.__sub = () => {
+          if (this.state.__err) this.setState({ __err: null });
+          this.forceUpdate();
+        };
+        this.__makeLogic(registry.get(this.__name).Logic, null);
+        ensureFetched(this.__name);
+      }
+      /** Error-boundary hook: a render crash anywhere in this DC's subtree
+       *  (its own template, an x-import'd component, a child DC without its
+       *  own deeper boundary) lands here instead of unmounting the page. */
+      static getDerivedStateFromError(e) {
+        return { __err: e instanceof Error && e.message ? e.message : String(e) };
+      }
+      componentDidCatch(e, info) {
+        console.error(
+          "[dc-runtime] render error in <" + this.__name + ">:",
+          e,
+          info?.componentStack || ""
+        );
+      }
+      /** Instantiate the logic class (or the no-op base) and adopt `prevState`
+       *  over its initial state — used both at mount and on hot-swap. */
+      __makeLogic(Logic, prevState) {
+        const L = Logic || StreamableLogic;
+        try {
+          this.logic = new L(this.__userProps());
+          this.__failedLogic = null;
+          this.__failedUserProps = null;
+          this.__ctorError = null;
+        } catch (e) {
+          console.error(e);
+          this.__failedLogic = Logic;
+          this.__failedUserProps = this.__userProps();
+          this.__failedVer = registry.get(this.__name).ver;
+          this.__ctorError = this.__name + ": " + (e instanceof Error && e.message ? e.message : String(e));
+          this.logic = new StreamableLogic(
+            this.__userProps()
+          );
+        }
+        this.logic.__host = this;
+        if (prevState)
+          this.logic.state = { ...this.logic.state || {}, ...prevState };
+      }
+      /** The props the author's logic + template see — internal __-prefixed
+       *  wiring stripped. */
+      __userProps() {
+        const { __name, __hintSize, __tplId, __hostStyle, ...rest } = this.props;
+        return rest;
+      }
+      __setLogicState(update, cb) {
+        const prev = this.logic.state;
+        const patch = typeof update === "function" ? update(prev) : update;
+        this.logic.state = { ...prev, ...patch };
+        this.setState((s) => ({ __v: s.__v + 1 }), cb);
+      }
+      /** Swap the logic instance when the registry's Logic class changed
+       *  (streaming completion, hot reload). State carries over; didMount
+       *  re-fires after the swap commits so refs exist. */
+      __reconcileLogic() {
+        const r = registry.get(this.__name);
+        const Next = r.Logic;
+        const Cur = this.logic.constructor;
+        if (Next === Cur || !Next && Cur === StreamableLogic || Next === this.__failedLogic && r.ver === this.__failedVer && shallowEqual(this.__userProps(), this.__failedUserProps)) {
+          return;
+        }
+        if (!this.__needsDidMount) {
+          try {
+            this.logic.componentWillUnmount();
+          } catch (e) {
+            console.error(e);
+          }
+        }
+        this.__makeLogic(Next, this.logic.state);
+        this.__needsDidMount = true;
+      }
+      componentDidMount() {
+        registry.get(this.__name).subs.add(this.__sub);
+        try {
+          this.logic.componentDidMount();
+        } catch (e) {
+          console.error(e);
+        }
+      }
+      componentDidUpdate(prevProps) {
+        this.logic.props = this.__userProps();
+        if (this.__needsDidMount) {
+          if (this.state.__err || !registry.get(this.__name).tpl) return;
+          this.__needsDidMount = false;
+          try {
+            this.logic.componentDidMount();
+          } catch (e) {
+            console.error(e);
+          }
+        } else {
+          try {
+            this.logic.componentDidUpdate(prevProps);
+          } catch (e) {
+            console.error(e);
+          }
+        }
+      }
+      componentWillUnmount() {
+        registry.get(this.__name).subs.delete(this.__sub);
+        if (!this.__needsDidMount) {
+          try {
+            this.logic.componentWillUnmount();
+          } catch (e) {
+            console.error(e);
+          }
+        }
+      }
+      render() {
+        const r = registry.get(this.__name);
+        const cls = "sc-host" + (r.htmlStreaming ? " sc-streaming-html" : "") + (r.jsStreaming ? " sc-streaming-js" : "");
+        const hintStyle = r.htmlStreaming ? hintToMin(this.props.__hintSize) : void 0;
+        const hostStyle = this.props.__hostStyle || hintStyle ? { ...hintStyle || {}, ...this.props.__hostStyle || {} } : void 0;
+        const hostBase = {
+          className: cls,
+          style: hostStyle,
+          "data-sc-name": this.__name,
+          "data-dc-tpl": this.props.__tplId
+        };
+        const chain = Array.isArray(this.context) ? this.context : [];
+        if (chain.includes(this.__name)) {
+          const cycle = [
+            ...chain.slice(chain.indexOf(this.__name)),
+            this.__name
+          ].join(" \u2192 ");
+          return h(
+            "div",
+            { ...hostBase, className: cls + " sc-has-error" },
+            h(Placeholder, {
+              name: this.__name,
+              hintSize: this.props.__hintSize,
+              error: "circular import: " + cycle
+            })
+          );
+        }
+        if (this.state.__err) {
+          return h(
+            "div",
+            { ...hostBase, className: cls + " sc-has-error" },
+            h(
+              "div",
+              { className: "sc-logic-error", "data-omelette-chrome": "" },
+              this.__name + ": " + this.state.__err
+            ),
+            h(Placeholder, {
+              name: this.__name,
+              hintSize: this.props.__hintSize,
+              error: this.state.__err
+            })
+          );
+        }
+        this.__reconcileLogic();
+        if (!r.tpl) {
+          return h(
+            "div",
+            hostBase,
+            h(Placeholder, { name: this.__name, hintSize: this.props.__hintSize })
+          );
+        }
+        const userProps = this.__userProps();
+        this.logic.props = userProps;
+        let vals = userProps;
+        let renderErr = r.logicError || this.__ctorError;
+        try {
+          vals = { ...userProps, ...this.logic.renderVals() || {} };
+        } catch (e) {
+          console.error(e);
+          renderErr = this.__name + ".renderVals(): " + (e instanceof Error && e.message ? e.message : String(e));
+        }
+        this.__streamingNow = !!(r.htmlStreaming || r.jsStreaming);
+        this.__htmlStreamingNow = !!r.htmlStreaming;
+        return h(
+          "div",
+          { ...hostBase, className: cls + (renderErr ? " sc-has-error" : "") },
+          renderErr && h(
+            "div",
+            { className: "sc-logic-error", "data-omelette-chrome": "" },
+            renderErr
+          ),
+          h(
+            AncestorContext.Provider,
+            { value: [...chain, this.__name] },
+            r.tpl(vals, this)
+          )
+        );
+      }
+    }
+    __publicField(StreamableComponent, "contextType", AncestorContext);
+    const named = /* @__PURE__ */ new Map();
+    function getDC(name) {
+      const hit = named.get(name);
+      if (hit) return hit;
+      function Dispatcher(p) {
+        const [, setTick] = React.useState(0);
+        React.useEffect(() => {
+          const sub = () => setTick((n) => n + 1);
+          registry.get(name).subs.add(sub);
+          return () => {
+            registry.get(name).subs.delete(sub);
+          };
+        }, []);
+        ensureFetched(name);
+        return h(StreamableComponent, { ...p, __name: name });
+      }
+      Dispatcher.displayName = name;
+      named.set(name, Dispatcher);
+      return Dispatcher;
+    }
+    return {
+      getDC,
+      StreamableComponent
+    };
+  }
+
+  // src/bundled.ts
+  function bundledBlob(url) {
+    const blobs = window.__resourceBlobs;
+    const b = blobs ? blobs[url.split("#")[0]] : void 0;
+    return b instanceof Blob ? b : null;
+  }
+
+  // src/cdn.ts
+  var REACT_URL = "https://unpkg.com/react@18.3.1/umd/react.production.min.js";
+  var REACT_SRI = "sha384-DGyLxAyjq0f9SPpVevD6IgztCFlnMF6oW/XQGmfe+IsZ8TqEiDrcHkMLKI6fiB/Z";
+  var REACT_DOM_URL = "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js";
+  var REACT_DOM_SRI = "sha384-gTGxhz21lVGYNMcdJOyq01Edg0jhn/c22nsx0kyqP0TxaV5WVdsSH1fSDUf5YJj1";
+  var BABEL_URL = "https://unpkg.com/@babel/standalone@7.29.0/babel.min.js";
+  var BABEL_SRI = "sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y";
+  function cdnScriptFor(url, sri) {
+    const res = window.__resources;
+    const v = res ? res[url] : void 0;
+    return typeof v === "string" && v ? { src: v } : { src: url, integrity: sri };
+  }
+
+  // src/external.ts
+  var isCustomElementName = (n) => !n.includes(".") && n.includes("-");
+  function isRenderableType(g) {
+    if (typeof g === "function") return !isElementClass(g);
+    return typeof g === "object" && g !== null && typeof g.$$typeof === "symbol";
+  }
+  function resolveDottedPath(root, name) {
+    let cur = root;
+    for (const seg of name.split(".")) {
+      if (cur == null) return void 0;
+      cur = cur[seg];
+    }
+    return cur;
+  }
+  var GLOBAL_POLL_INTERVAL_MS = 50;
+  var GLOBAL_POLL_TIMEOUT_MS = 3e4;
+  function createExternalModules(onResolved) {
+    const cache = /* @__PURE__ */ new Map();
+    let babelLoading = null;
+    const reportedMissing = /* @__PURE__ */ new Map();
+    const polling = /* @__PURE__ */ new Set();
+    function ensureBabel() {
+      if (window.Babel) return Promise.resolve();
+      if (babelLoading) return babelLoading;
+      const babel = cdnScriptFor(BABEL_URL, BABEL_SRI);
+      babelLoading = new Promise((res, rej) => {
+        const s = document.createElement("script");
+        s.src = babel.src;
+        if (babel.integrity) {
+          s.integrity = babel.integrity;
+          s.crossOrigin = "anonymous";
+        }
+        s.onload = () => res();
+        s.onerror = rej;
+        document.head.appendChild(s);
+      });
+      return babelLoading;
+    }
+    const pending = /* @__PURE__ */ new Map();
+    function load(kind, url, after) {
+      const existing = pending.get(url);
+      if (existing) return existing;
+      cache.set(url, null);
+      console.info("[dc-runtime] x-import: loading", url, "(" + kind + ")");
+      const ready = Promise.all([
+        kind === "jsx" ? ensureBabel() : Promise.resolve(),
+        after ?? Promise.resolve()
+      ]);
+      const p = ready.then(() => {
+        const pre = bundledBlob(url);
+        if (pre) return pre.text();
+        return fetch(url).then((r) => {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          return r.text();
+        });
+      }).then((src) => {
+        const code = kind === "jsx" ? window.Babel.transform(src, {
+          filename: url,
+          presets: ["react", "typescript"]
+        }).code : src;
+        const module = { exports: {} };
+        const before = new Set(Object.keys(window));
+        //! nosemgrep: eval-and-function-constructor
+        new Function("React", "module", "exports", "require", code)(
+          getReact(),
+          module,
+          module.exports,
+          () => ({})
+        );
+        const globals = {};
+        for (const k of Object.keys(window)) {
+          if (!before.has(k) && typeof window[k] === "function") {
+            globals[k] = window[k];
+          }
+        }
+        cache.set(url, { mod: module.exports, globals });
+        console.info(
+          "[dc-runtime] x-import: loaded",
+          url,
+          "\u2014 exports:",
+          Object.keys(module.exports),
+          "window globals:",
+          Object.keys(globals)
+        );
+        onResolved();
+      }).catch((e) => {
+        cache.set(url, {
+          mod: {},
+          globals: {},
+          error: "failed to load: " + (e instanceof Error && e.message ? e.message : String(e))
+        });
+        console.error(
+          "[dc-runtime] x-import: FAILED to load",
+          url,
+          "(" + kind + ")",
+          e
+        );
+        onResolved();
+      });
+      pending.set(url, p);
+      return p;
+    }
+    function resolve2(url, name) {
+      const entry = cache.get(url);
+      if (!entry) return null;
+      const { mod, globals } = entry;
+      const C = mod && mod[name] || globals && globals[name] || typeof window !== "undefined" && window[name] || mod && mod.default;
+      if (typeof C === "function") return C;
+      const key = url + "\0" + name;
+      if (!reportedMissing.has(key)) {
+        reportedMissing.set(
+          key,
+          entry.error || 'no export named "' + name + '" (has: ' + Object.keys(mod).join(", ") + ")"
+        );
+        console.error(
+          "[dc-runtime] x-import: module",
+          url,
+          "loaded but has no component named",
+          JSON.stringify(name),
+          "\u2014 available exports:",
+          Object.keys(mod),
+          "window globals:",
+          Object.keys(globals),
+          ". The module must `module.exports = {" + name + "}` or set `window." + name + "`."
+        );
+      }
+      return null;
+    }
+    function waitForGlobal(name) {
+      if (polling.has(name)) return;
+      polling.add(name);
+      const started = Date.now();
+      const isCE = isCustomElementName(name);
+      const tick = () => {
+        const found = isCE ? customElements.get(name) : isRenderableType(resolveDottedPath(window, name));
+        if (found) {
+          polling.delete(name);
+          onResolved();
+          return;
+        }
+        if (Date.now() - started >= GLOBAL_POLL_TIMEOUT_MS) {
+          console.warn(
+            "[dc-runtime] x-import: global",
+            JSON.stringify(name),
+            "never appeared on window after " + GLOBAL_POLL_TIMEOUT_MS + "ms"
+          );
+          return;
+        }
+        setTimeout(tick, GLOBAL_POLL_INTERVAL_MS);
+      };
+      setTimeout(tick, GLOBAL_POLL_INTERVAL_MS);
+    }
+    function resolveGlobal(url, name) {
+      const isCE = isCustomElementName(name);
+      if (!url) {
+        if (isCE) {
+          if (customElements.get(name)) return name;
+          waitForGlobal(name);
+          return null;
+        }
+        const g2 = resolveDottedPath(window, name);
+        if (isRenderableType(g2)) return g2;
+        waitForGlobal(name);
+        return null;
+      }
+      const entry = cache.get(url);
+      if (!entry) return null;
+      if (isCE && customElements.get(name)) return name;
+      const g = entry.globals[name] ?? resolveDottedPath(window, name);
+      if (isRenderableType(g)) return g;
+      if (name.includes(".")) return null;
+      const key = url + "\0global\0" + name;
+      if (!reportedMissing.has(key)) {
+        reportedMissing.set(key, null);
+        if (isCE && !customElements.get(name)) {
+          console.warn(
+            "[dc-runtime] x-import:",
+            url,
+            "loaded but no custom element",
+            JSON.stringify(name),
+            "is registered and window." + name + " is not a function \u2014 rendering <" + name + "> as an unknown element."
+          );
+        }
+      }
+      return name;
+    }
+    function getError(url, name) {
+      const entry = cache.get(url);
+      if (entry?.error) return entry.error;
+      return reportedMissing.get(url + "\0" + name) || null;
+    }
+    return { load, resolve: resolve2, resolveGlobal, getError };
+  }
+  function isElementClass(g) {
+    try {
+      return typeof g === "function" && typeof HTMLElement !== "undefined" && g.prototype instanceof HTMLElement;
+    } catch {
+      return false;
+    }
+  }
+
+  // src/atomics.ts
+  var ATOMIC_CSS = (
+    // layout
+    ".fx{display:flex}.col{display:flex;flex-direction:column}.grid{display:grid}.ac{align-items:center}.jc{justify-content:center}.jb{justify-content:space-between}.f1{flex:1}.noshrink{flex-shrink:0}.wrap{flex-wrap:wrap}.fw5{font-weight:500}.fw6{font-weight:600}.fw7{font-weight:700}.fw8{font-weight:800}.fs11{font-size:11px}.fs12{font-size:12px}.fs13{font-size:13px}.fs14{font-size:14px}.fs15{font-size:15px}.fs16{font-size:16px}.fs20{font-size:20px}.fs22{font-size:22px}.upper{text-transform:uppercase}.tc{text-align:center}.nowrap{white-space:nowrap}.gap8{gap:8px}.gap10{gap:10px}.gap12{gap:12px}.gap16{gap:16px}.gap24{gap:24px}.m0{margin:0}.mt8{margin-top:8px}.mt12{margin-top:12px}.mt16{margin-top:16px}.mb8{margin-bottom:8px}.mb12{margin-bottom:12px}.mb16{margin-bottom:16px}.posrel{position:relative}.posabs{position:absolute}.round{border-radius:50%}.ohide{overflow:hidden}.bbox{box-sizing:border-box}.pointer{cursor:pointer}.w100{width:100%}.b0{border:none}"
+  );
+
+  // src/helmet.ts
+  var DESIGN_DOC_MODE_RE = /<meta\b[^>]*\bname\s*=\s*["']design_doc_mode["'][^>]*\b(?:content|value)\s*=\s*["'](\w+)["']/i;
+  var CANVAS_BG_LIGHT = "#f0eee6";
+  var CANVAS_BG_DARK = "#2e2c26";
+  function createHelmetManager(doc, isStreaming) {
+    const mounted = /* @__PURE__ */ new Set();
+    const live = /* @__PURE__ */ new Map();
+    let designDocMode = null;
+    let canvasStyleEl = null;
+    let appTheme = "light";
+    try {
+      const ds = doc.documentElement.dataset.theme;
+      appTheme = ds === "dark" || ds === "light" ? ds : new URLSearchParams(doc.defaultView?.location.search ?? "").get(
+        "theme"
+      ) === "dark" ? "dark" : "light";
+    } catch {
+    }
+    function applyCanvasBg() {
+      if (!canvasStyleEl) return;
+      const bg = appTheme === "dark" ? CANVAS_BG_DARK : CANVAS_BG_LIGHT;
+      canvasStyleEl.textContent = `html,body{background:${bg}}#dc-root>.sc-host{position:relative}`;
+    }
+    function postDesignMode(mode) {
+      if (window.parent === window) return;
+      try {
+        window.parent.postMessage({ type: "__dc_design_mode", mode }, "*");
+      } catch {
+      }
+    }
+    function setDesignDocMode(mode) {
+      if (mode === designDocMode) return;
+      designDocMode = mode;
+      postDesignMode(mode);
+      if (mode === "canvas") {
+        doc.documentElement.setAttribute("data-dc-canvas", "");
+        canvasStyleEl = doc.createElement("style");
+        canvasStyleEl.setAttribute("data-dc-canvas", "");
+        applyCanvasBg();
+        doc.head.appendChild(canvasStyleEl);
+      } else {
+        doc.documentElement.removeAttribute("data-dc-canvas");
+        canvasStyleEl?.remove();
+        canvasStyleEl = null;
+      }
+    }
+    window.addEventListener("message", (e) => {
+      const type = e.data && e.data.type;
+      if (type === "__dc_theme") {
+        const t = e.data.theme;
+        if (t === "light" || t === "dark") {
+          appTheme = t;
+          applyCanvasBg();
+        }
+        return;
+      }
+      if (!designDocMode || type !== "__dc_probe") return;
+      postDesignMode(designDocMode);
+    });
+    function compile(node) {
+      const raw = [...node.children];
+      const helmetClosed = node.nextSibling != null || node.parentNode?.nextSibling != null;
+      if (node.hasAttribute("data-dc-atomics") && !mounted.has("__dc-atomics")) {
+        mounted.add("__dc-atomics");
+        const el = doc.createElement("style");
+        el.id = "__dc-atomics";
+        el.textContent = ATOMIC_CSS;
+        doc.head.appendChild(el);
+      }
+      return (_vals, ctx) => {
+        const name = ctx && ctx.__name || "";
+        const streaming = !!(name && isStreaming(name));
+        for (let i = 0; i < raw.length; i++) {
+          const child = raw[i];
+          const tag = child.tagName;
+          const mayBePartial = streaming && !helmetClosed && i === raw.length - 1;
+          if (tag === "SCRIPT") {
+            if (mayBePartial) continue;
+            const key = "SCRIPT|" + (child.getAttribute("src") || child.textContent || "");
+            if (mounted.has(key)) continue;
+            mounted.add(key);
+            const el = doc.createElement("script");
+            for (const { name: an, value } of [...child.attributes])
+              el.setAttribute(an, value);
+            if (child.textContent) el.textContent = child.textContent;
+            doc.head.appendChild(el);
+          } else if (tag === "LINK" || tag === "META") {
+            if (mayBePartial) continue;
+            const key = tag + "|" + (child.getAttribute("href") || child.getAttribute("src") || child.outerHTML);
+            if (mounted.has(key)) continue;
+            mounted.add(key);
+            if (tag === "LINK") {
+              const rel = (child.getAttribute("rel") || "").toLowerCase().split(/\s+/);
+              const href = (child.getAttribute("href") || "").trim();
+              const res = window.__resources;
+              const pre = res && rel.includes("stylesheet") && !rel.includes("alternate") ? res[href] : void 0;
+              const blob = typeof pre === "string" && pre ? bundledBlob(pre) : null;
+              if (blob) {
+                const el = doc.createElement("style");
+                if (child.hasAttribute("disabled")) {
+                  el.setAttribute("media", "not all");
+                } else if (child.getAttribute("media")) {
+                  el.setAttribute("media", child.getAttribute("media"));
+                }
+                if (child.getAttribute("title"))
+                  el.setAttribute("title", child.getAttribute("title"));
+                void blob.text().then((css) => {
+                  el.textContent = css;
+                });
+                doc.head.appendChild(el);
+                continue;
+              }
+            }
+            doc.head.appendChild(child.cloneNode(true));
+          } else {
+            const key = name + "|" + i;
+            let el = live.get(key);
+            if (!el || el.tagName !== tag) {
+              if (el) el.remove();
+              el = doc.createElement(tag.toLowerCase());
+              live.set(key, el);
+              doc.head.appendChild(el);
+            }
+            for (const { name: an, value } of [...child.attributes]) {
+              if (el.getAttribute(an) !== value) el.setAttribute(an, value);
+            }
+            if (el.textContent !== child.textContent)
+              el.textContent = child.textContent;
+          }
+        }
+        return null;
+      };
+    }
+    return { compile, setDesignDocMode };
+  }
+
+  // src/pseudo.ts
+  function scanUnquotedUrl(css, i) {
+    if (css[i] !== "u" && css[i] !== "U" || css.slice(i, i + 4).toLowerCase() !== "url(" || /[a-z0-9_-]/i.test(css[i - 1] ?? "")) {
+      return -1;
+    }
+    let j = i + 4;
+    while (j < css.length && /\s/.test(css[j])) j++;
+    if (css[j] === '"' || css[j] === "'") return -1;
+    while (j < css.length && css[j] !== ")") {
+      if (css[j] === "\\") j++;
+      j++;
+    }
+    return j < css.length ? j + 1 : css.length;
+  }
+  function stripComments(css) {
+    let out = "";
+    let quote = "";
+    for (let i = 0; i < css.length; i++) {
+      const c = css[i];
+      if (quote) {
+        if (c === "\\") {
+          out += c + (css[i + 1] ?? "");
+          i++;
+          continue;
+        }
+        if (c === quote) quote = "";
+        out += c;
+      } else if (c === "'" || c === '"') {
+        quote = c;
+        out += c;
+      } else if (c === "/" && css[i + 1] === "*") {
+        const end = css.indexOf("*/", i + 2);
+        i = end === -1 ? css.length : end + 1;
+        out += " ";
+      } else {
+        const end = scanUnquotedUrl(css, i);
+        if (end === -1) out += c;
+        else {
+          out += css.slice(i, end);
+          i = end - 1;
+        }
+      }
+    }
+    return out;
+  }
+  function importantify(css) {
+    css = stripComments(css);
+    const decls = [];
+    let start = 0;
+    let depth = 0;
+    let quote = "";
+    for (let i = 0; i < css.length; i++) {
+      const c = css[i];
+      if (quote) {
+        if (c === "\\") i++;
+        else if (c === quote) quote = "";
+      } else if (c === "'" || c === '"') quote = c;
+      else if (c === "(") depth++;
+      else if (c === ")") depth = Math.max(0, depth - 1);
+      else if (c === ";" && depth === 0) {
+        decls.push(css.slice(start, i));
+        start = i + 1;
+      } else {
+        const end = scanUnquotedUrl(css, i);
+        if (end !== -1) i = end - 1;
+      }
+    }
+    decls.push(css.slice(start));
+    return decls.map((d) => d.trim()).filter(Boolean).map((d) => /!\s*important$/i.test(d) ? d : d + " !important").join(";");
+  }
+  function createPseudoSheet(doc) {
+    let el = null;
+    const cache = /* @__PURE__ */ new Map();
+    let n = 0;
+    return (pseudo, css) => {
+      const k = pseudo + "|" + css;
+      const hit = cache.get(k);
+      if (hit) return hit;
+      if (!el) {
+        el = doc.createElement("style");
+        doc.head.appendChild(el);
+      }
+      const cls = "scp" + (n++).toString(36);
+      const isPseudoElement = pseudo === "before" || pseudo === "after";
+      const sel = isPseudoElement ? "." + cls + "::" + pseudo : "." + cls + ":" + pseudo;
+      el.sheet.insertRule(
+        sel + "{" + (isPseudoElement ? css : importantify(css)) + "}",
+        el.sheet.cssRules.length
+      );
+      cache.set(k, cls);
+      return cls;
+    };
+  }
+
+  // src/registry.ts
+  function createRegistry() {
+    const entries = /* @__PURE__ */ Object.create(null);
+    function get(name) {
+      return entries[name] || (entries[name] = {
+        html: "",
+        tpl: null,
+        Logic: null,
+        jsStreaming: false,
+        htmlStreaming: false,
+        ver: 0,
+        subs: /* @__PURE__ */ new Set(),
+        fetched: false
+      });
+    }
+    function bump(name) {
+      const r = get(name);
+      r.ver++;
+      for (const fn of r.subs) fn();
+    }
+    return {
+      entries,
+      get,
+      bump,
+      bumpAll() {
+        for (const n in entries) bump(n);
+      }
+    };
+  }
+
+  // src/runtime.ts
+  var COMPONENT_DIR = ".";
+  function createRuntime(doc = document) {
+    const registry = createRegistry();
+    const pseudoClass = createPseudoSheet(doc);
+    const helmet = createHelmetManager(
+      doc,
+      (name) => registry.get(name).htmlStreaming
+    );
+    const external = createExternalModules(() => registry.bumpAll());
+    const factory = createComponentFactory(registry, ensureFetched);
+    const host = {
+      component: (name) => factory.getDC(name),
+      placeholder: (props) => h(Placeholder, props),
+      helmet: (node) => helmet.compile(node),
+      loadExternal: (kind, url, after) => external.load(kind, url, after),
+      resolveExternal: (url, name) => external.resolve(url, name),
+      resolveExternalGlobal: (url, name) => external.resolveGlobal(url, name),
+      resolveExternalError: (url, name) => external.getError(url, name),
+      pseudoClass
+    };
+    function ensureFetched(name) {
+      const r = registry.get(name);
+      if (r.fetched) return;
+      r.fetched = true;
+      const url = COMPONENT_DIR + "/" + encodeURIComponent(name) + ".dc.html";
+      const res = window.__resources;
+      const pre = res ? res[url] : void 0;
+      const target = typeof pre === "string" && pre ? pre : url;
+      const blob = bundledBlob(target);
+      (blob ? blob.text() : fetch(target).then((res2) => {
+        if (!res2.ok) {
+          console.error(
+            '[dc-runtime] sibling fetch for "' + name + '" failed:',
+            url,
+            "returned",
+            res2.status,
+            "\u2014 the reference renders as an empty placeholder."
+          );
+          return "";
+        }
+        return res2.text();
+      })).then((t) => {
+        if (!t) return;
+        const parsed = parseDcText(t);
+        if (!parsed) {
+          console.error(
+            '[dc-runtime] sibling fetch for "' + name + '":',
+            url,
+            "has no <x-dc> block \u2014 not a Design Component."
+          );
+          return;
+        }
+        if (parsed.props) r.propsMeta = parsed.props;
+        if (parsed.preview) r.preview = parsed.preview;
+        if (parsed.template && !r.html) updateHtml(name, parsed.template);
+        if (parsed.js && !r.Logic) updateJs(name, parsed.js);
+      }).catch(
+        (e) => console.error(
+          '[dc-runtime] sibling fetch for "' + name + '" threw:',
+          url,
+          e
+        )
+      );
+    }
+    let rootName = null;
+    function updateHtml(name, html) {
+      const r = registry.get(name);
+      r.html = html;
+      if (name === rootName) {
+        const mode = DESIGN_DOC_MODE_RE.exec(html)?.[1] ?? null;
+        if (mode || !r.htmlStreaming) helmet.setDesignDocMode(mode);
+      }
+      try {
+        r.tpl = compileTemplate(html, host);
+      } catch (e) {
+        console.error("[dc-runtime] template compile FAILED for", name, e);
+      }
+      registry.bump(name);
+    }
+    function updateJs(name, src) {
+      const r = registry.get(name);
+      const seq = r.jsSeq = (r.jsSeq || 0) + 1;
+      try {
+        const Cls = evalDcLogic(src);
+        if (r.jsSeq !== seq) return;
+        if (typeof Cls !== "function") {
+          r.logicError = name + ".dc.html: <script data-dc-script> must define `class Component extends DCLogic`";
+        } else {
+          r.logicError = null;
+          r.Logic = Cls;
+        }
+      } catch (e) {
+        if (r.jsSeq !== seq) return;
+        console.error(
+          "[dc-runtime] logic class eval FAILED for",
+          name,
+          "\u2014 the template renders with props only.",
+          e
+        );
+        r.logicError = name + ": " + (e instanceof Error && e.message ? e.message : String(e));
+      }
+      registry.bump(name);
+    }
+    function setStreaming(name, kind, on) {
+      const r = registry.get(name);
+      if (kind === "html") r.htmlStreaming = !!on;
+      else r.jsStreaming = !!on;
+      let any = false;
+      for (const n in registry.entries) {
+        const e = registry.entries[n];
+        if (e && (e.htmlStreaming || e.jsStreaming)) {
+          any = true;
+          break;
+        }
+      }
+      doc.documentElement.classList.toggle("sc-dc-streaming", any);
+      registry.bump(name);
+    }
+    function dcUpdate(name, kind, content, streaming) {
+      if (streaming) registry.get(name).fetched = true;
+      if (kind === "html") {
+        setStreaming(name, "html", !!streaming);
+        updateHtml(name, content);
+      } else if (kind === "js") {
+        setStreaming(name, "js", !!streaming);
+        if (!streaming) updateJs(name, content);
+      } else if (kind === "props") {
+        const { props, preview } = parseDataProps(content);
+        const r = registry.get(name);
+        r.propsMeta = props ?? void 0;
+        r.preview = preview;
+        registry.bump(name);
+      }
+    }
+    function setProps(name, overrides) {
+      registry.get(name).propOverrides = overrides && typeof overrides === "object" ? { ...overrides } : null;
+      registry.bump(name);
+    }
+    function adoptParsed(name, parsed) {
+      if (!parsed) return;
+      const r = registry.get(name);
+      if (parsed.props) r.propsMeta = parsed.props;
+      if (parsed.preview) r.preview = parsed.preview;
+      if (parsed.template) updateHtml(name, parsed.template);
+      if (parsed.js) updateJs(name, parsed.js);
+    }
+    return {
+      registry,
+      getDC: factory.getDC,
+      updateHtml,
+      updateJs,
+      dcUpdate,
+      setProps,
+      adoptParsed,
+      setRootName: (name) => {
+        rootName = name;
+      },
+      markFetched: (name) => {
+        registry.get(name).fetched = true;
+      },
+      annotatedTemplate: (name) => {
+        const r = registry.get(name);
+        return r.tpl && r.tpl.__annotated || null;
+      },
+      templateSource: (name) => registry.get(name).html || null,
+      StreamableLogic
+    };
+  }
+
+  // src/stream-state.ts
+  function createStreamTracker(staleMs = 6e4, now = Date.now) {
+    const since = /* @__PURE__ */ new Map();
+    const liveOne = (n) => {
+      const t = since.get(n);
+      if (t === void 0) return false;
+      if (now() - t > staleMs) {
+        since.delete(n);
+        return false;
+      }
+      return true;
+    };
+    return {
+      push(name, streaming, viewportKey) {
+        if (viewportKey === "dc-model") return;
+        if (streaming) since.set(name, now());
+        else since.delete(name);
+      },
+      live(name) {
+        if (name !== void 0) return liveOne(name);
+        for (const n of [...since.keys()]) if (liveOne(n)) return true;
+        return false;
+      }
+    };
+  }
+
+  // src/index.ts
+  function hideRawTemplate() {
+    const s = document.createElement("style");
+    s.textContent = "x-dc{display:none!important}";
+    document.head.appendChild(s);
+  }
+  function loadScript(src, integrity) {
+    return new Promise((resolve2, reject) => {
+      //! nosemgrep: create-script-element
+      const s = document.createElement("script");
+      s.src = src;
+      if (integrity) {
+        s.integrity = integrity;
+        s.crossOrigin = "anonymous";
+      }
+      s.async = false;
+      s.onload = () => resolve2();
+      s.onerror = () => reject(new Error(`failed to load ${src}`));
+      document.head.appendChild(s);
+    });
+  }
+  function loadReactUmd() {
+    const w = window;
+    if (w.React && w.ReactDOM) return Promise.resolve();
+    const react = cdnScriptFor(REACT_URL, REACT_SRI);
+    const reactDom = cdnScriptFor(REACT_DOM_URL, REACT_DOM_SRI);
+    return Promise.all([
+      loadScript(react.src, react.integrity),
+      loadScript(reactDom.src, reactDom.integrity)
+    ]).then(() => void 0);
+  }
+  function init() {
+    const runtime = createRuntime(document);
+    let rootName = "Root";
+    const baseCss = document.createElement("style");
+    baseCss.textContent = BASE_CSS;
+    document.head.prepend(baseCss);
+    const notifyHost = () => {
+      if (window.parent === window) return;
+      const r = runtime.registry.entries[rootName];
+      try {
+        window.parent.postMessage(
+          {
+            type: "__dc_booted",
+            rootName,
+            propsMeta: r && r.propsMeta || null,
+            preview: r && r.preview || null
+          },
+          "*"
+        );
+      } catch {
+      }
+    };
+    const streams = createStreamTracker();
+    const api = {
+      __dcUpdate: (name, kind, content, streaming, viewportKey) => {
+        streams.push(name, streaming, viewportKey);
+        runtime.dcUpdate(name, kind, content, streaming);
+        if (name === rootName && !streaming && kind === "props") notifyHost();
+      },
+      __dcStreaming: (name) => streams.live(name),
+      __dcSetProps: (name, overrides) => runtime.setProps(name, overrides),
+      /** Name of the component currently mounted as the page root — DC tools
+       *  push their template-stream here when targeting "the open page". */
+      __dcRootName: () => rootName,
+      /** Editor bridge — the encoded, `data-dc-tpl`-annotated template source.
+       *  The host editor parses this into its own template DOM so it can map a
+       *  rendered node (carrying the same `data-dc-tpl`) back to the source
+       *  node that emitted it. Returns the encoded form (`sc-camel-*` attrs,
+       *  `<sc-raw-*>`/`<sc-helmet>` tags); the editor decodes on serialize. */
+      __dcAnnotatedTemplate: (name) => runtime.annotatedTemplate(name),
+      /** Editor bridge — the *original* (decoded) template source. */
+      __dcTemplateSource: (name) => runtime.templateSource(name),
+      __dcBoot: () => {
+        rootName = boot(runtime, document) ?? rootName;
+        notifyHost();
+      },
+      __dcRegistry: runtime.registry.entries,
+      getDC: (name) => runtime.getDC(name),
+      // `DCLogic` is the documented base class name; `StreamableLogic` is the
+      // implementation alias kept for any project that already references it.
+      DCLogic: runtime.StreamableLogic,
+      StreamableLogic: runtime.StreamableLogic
+    };
+    Object.assign(window, api);
+    window.__dcContentKeyed = true;
+    if (document.readyState !== "loading") api.__dcBoot();
+    else document.addEventListener("DOMContentLoaded", () => api.__dcBoot());
+  }
+  hideRawTemplate();
+  loadReactUmd().then(init).catch((err) => {
+    console.error("[dc] failed to load React or boot:", err);
+    throw err;
+  });
+})();
